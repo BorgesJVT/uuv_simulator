@@ -13,5 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# This expresses an estimated position with a reference coordinate frame and
+# timestamp
+
 std_msgs/Header header
-float64 data
+PositionWithCovariance pos

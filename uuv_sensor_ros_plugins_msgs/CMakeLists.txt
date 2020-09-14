@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(uuv_gazebo_ros_plugins_msgs)
+project(uuv_sensor_ros_plugins_msgs)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -16,23 +16,18 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
 set(msg_files
-  "msg/FloatStamped.msg"
-  "msg/UnderwaterObjectModel.msg"
-  "msg/ThrusterConversionFcn.msg"
+  "msg/DVL.msg"
+  "msg/DVLBeam.msg"
+  "msg/PositionWithCovariance.msg"
+  "msg/PositionWithCovarianceStamped.msg"
+  "msg/ChemicalParticleConcentration.msg"
+  "msg/Salinity.msg"
 )
 
 set(srv_files
-  "srv/SetThrusterEfficiency.srv"
-  "srv/SetThrusterState.srv"
-  "srv/GetThrusterEfficiency.srv"
-  "srv/GetThrusterState.srv"
-  "srv/SetUseGlobalCurrentVel.srv"
-  "srv/GetModelProperties.srv"
-  "srv/SetFloat.srv"
-  "srv/GetFloat.srv"
-  "srv/GetListParam.srv"
-  "srv/GetThrusterConversionFcn.srv"
+  "srv/ChangeSensorState.srv"
 )
+
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}

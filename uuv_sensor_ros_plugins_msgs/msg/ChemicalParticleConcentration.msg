@@ -14,4 +14,15 @@
 # limitations under the License.
 
 std_msgs/Header header
-float64 data
+# Sensor link position
+geometry_msgs/Vector3 position
+# Latitude in degrees (WGS84 coordinates)
+float64 latitude
+# Longiture in degrees (WGS84 coordinates)
+float64 longitude
+# Depth in meters (WGS84 coordinates)
+float64 depth
+# Particle concentration
+float64 concentration
+# Status, false if no plume particles are received
+bool is_measuring
