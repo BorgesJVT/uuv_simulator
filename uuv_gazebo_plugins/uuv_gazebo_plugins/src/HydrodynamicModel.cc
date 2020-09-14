@@ -75,9 +75,10 @@ HydrodynamicModel::HydrodynamicModel(sdf::ElementPtr _sdf,
       double width = sdfModel->Get<double>("width");
       double length = sdfModel->Get<double>("length");
       double height = sdfModel->Get<double>("height");
-      ignition::math::Box boundingBox = ignition::math::Box(
-        ignition::math::Vector3d(-width / 2, -length / 2, -height / 2),
-        ignition::math::Vector3d(width / 2, length / 2, height / 2));
+      //ignition::math::Box boundingBox = ignition::math::Box(
+      //  ignition::math::Vector3d(-width / 2, -length / 2, -height / 2),
+      //  ignition::math::Vector3d(width / 2, length / 2, height / 2));
+      ignition::math::Box boundingBox = ignition::math::Box(ignition::math::Vector3d(width, length, height));
       // Setting the the bounding box from the given dimensions
       this->SetBoundingBox(boundingBox);
     }
@@ -551,11 +552,14 @@ bool HMFossen::GetParam(std::string _tag, double& _output)
   else if (!_tag.compare("fluid_density"))
     _output = this->fluidDensity;
   else if (!_tag.compare("bbox_height"))
-    _output = this->boundingBox.ZLength();
+    //_output = this->boundingBox.ZLength();
+    _output = this->boundingBox.Size()[2];
   else if (!_tag.compare("bbox_width"))
-    _output = this->boundingBox.YLength();
+    //_output = this->boundingBox.YLength();
+    _output = this->boundingBox.Size()[1];
   else if (!_tag.compare("bbox_length"))
-    _output = this->boundingBox.XLength();
+    //_output = this->boundingBox.XLength();
+    _output = this->boundingBox.Size()[0];
   else if (!_tag.compare("offset_volume"))
     _output = this->offsetVolume;
   else if (!_tag.compare("offset_added_mass"))
@@ -709,9 +713,12 @@ HMSphere::HMSphere(sdf::ElementPtr _sdf,
   {
     gzmsg << "HMSphere: Using the smallest length of bounding box as radius"
           << std::endl;
-    this->radius = std::min(this->boundingBox.XLength(),
+    this->radius = /*std::min(this->boundingBox.XLength(),
                             std::min(this->boundingBox.YLength(),
-                                     this->boundingBox.ZLength()));
+                                     this->boundingBox.ZLength()));*/
+           std::min(this->boundingBox.Size()[0],
+                            std::min(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
   }
   gzmsg << "HMSphere::radius=" << this->radius << std::endl;
   gzmsg << "HMSphere: Computing added mass" << std::endl;
@@ -801,9 +808,13 @@ HMCylinder::HMCylinder(sdf::ElementPtr _sdf,
   {
     gzmsg << "HMCylinder: Using the smallest length of bounding box as radius"
           << std::endl;
-    this->radius = std::min(this->boundingBox.XLength(),
+    this->radius = /*std::min(this->boundingBox.XLength(),
                             std::min(this->boundingBox.YLength(),
-                                     this->boundingBox.ZLength()));
+                                     this->boundingBox.ZLength()));*/
+           std::min(this->boundingBox.Size()[0],
+                            std::min(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
+
   }
   gzmsg << "HMCylinder::radius=" << this->radius << std::endl;
 
@@ -813,9 +824,12 @@ HMCylinder::HMCylinder(sdf::ElementPtr _sdf,
   {
       gzmsg << "HMCylinder: Using the biggest length of bounding box as length"
             << std::endl;
-      this->length = std::max(this->boundingBox.XLength(),
-                              std::max(this->boundingBox.YLength(),
-                                       this->boundingBox.ZLength()));
+      this->length = /*std::max(this->boundingBox.XLength(),
+                            std::max(this->boundingBox.YLength(),
+                                     this->boundingBox.ZLength()));*/
+           std::max(this->boundingBox.Size()[0],
+                            std::max(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
   }
   gzmsg << "HMCylinder::length=" << this->length << std::endl;
 
@@ -850,12 +864,16 @@ HMCylinder::HMCylinder(sdf::ElementPtr _sdf,
   {
     gzmsg << "HMCylinder: Using the direction of biggest length as axis"
           << std::endl;
-    double maxLength = std::max(this->boundingBox.XLength(),
-                                std::max(this->boundingBox.YLength(),
-                                         this->boundingBox.ZLength()));
-    if (maxLength == this->boundingBox.XLength())
+    double maxLength = /*std::max(this->boundingBox.XLength(),
+                            std::max(this->boundingBox.YLength(),
+                                     this->boundingBox.ZLength()));*/
+           std::max(this->boundingBox.Size()[0],
+                            std::max(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
+    
+    if (maxLength == this->boundingBox.Size()[0]/*XLength()*/)
       this->axis = "i";
-    else if (maxLength == this->boundingBox.YLength())
+    else if (maxLength == this->boundingBox.Size()[1]/*YLength()*/)
       this->axis = "j";
     else
       this->axis = "k";
@@ -975,9 +993,12 @@ HMSpheroid::HMSpheroid(sdf::ElementPtr _sdf,
   {
     gzmsg << "HMSpheroid: Using the smallest length of bounding box as radius"
           << std::endl;
-    this->radius = std::min(this->boundingBox.XLength(),
+    this->radius = /*std::min(this->boundingBox.XLength(),
                             std::min(this->boundingBox.YLength(),
-                                     this->boundingBox.ZLength()));
+                                     this->boundingBox.ZLength()));*/
+           std::min(this->boundingBox.Size()[0],
+                            std::min(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
   }
   GZ_ASSERT(this->radius > 0, "Radius cannot be negative");
   gzmsg << "HMSpheroid::radius=" << this->radius << std::endl;
@@ -988,9 +1009,12 @@ HMSpheroid::HMSpheroid(sdf::ElementPtr _sdf,
   {
       gzmsg << "HMSpheroid: Using the biggest length of bounding box as length"
             << std::endl;
-      this->length = std::max(this->boundingBox.XLength(),
-                              std::max(this->boundingBox.YLength(),
-                                       this->boundingBox.ZLength()));
+      this->length = /*std::max(this->boundingBox.XLength(),
+                            std::max(this->boundingBox.YLength(),
+                                     this->boundingBox.ZLength()));*/
+           std::max(this->boundingBox.Size()[0],
+                            std::max(this->boundingBox.Size()[1],
+                                     this->boundingBox.Size()[2]));
   }
   GZ_ASSERT(this->length > 0, "Length cannot be negative");
   gzmsg << "HMSpheroid::length=" << this->length << std::endl;
