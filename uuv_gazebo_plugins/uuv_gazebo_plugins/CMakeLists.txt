@@ -163,6 +163,7 @@ ament_export_include_directories(include)
 #ament_export_dependencies(gazebo_dev)
 #ament_export_dependencies(gazebo_msgs)
 #ament_export_dependencies(gazebo_ros)
+ament_export_dependencies(geometry_msgs)
 
 ament_package()
 
@@ -170,20 +171,20 @@ ament_package()
 ## Install ##
 #############
 
-# install(TARGETS ${UUV_GAZEBO_PLUGINS_LIST}
-#   ARCHIVE DESTINATION lib
-#   LIBRARY DESTINATION lib
-#   RUNTIME DESTINATION bin
-# )
+install(TARGETS ${UUV_GAZEBO_PLUGINS_LIST}
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
 
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION share/${PROJECT_NAME}/
-#   FILES_MATCHING PATTERN "*.hh"
-#   PATTERN "*~" EXCLUDE
-# )
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION include/${PROJECT_NAME}/
+  FILES_MATCHING PATTERN "*.hh"
+  PATTERN "*~" EXCLUDE
+)
 
-# install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/
-#   DESTINATION bin
-#   FILES_MATCHING PATTERN "*.pb.*"
-#   PATTERN "*~" EXCLUDE
-# )
+install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/
+  DESTINATION include/
+  FILES_MATCHING PATTERN "*.pb.*"
+  PATTERN "*~" EXCLUDE
+)
