@@ -21,8 +21,13 @@
 #include <gazebo/physics/Link.hh>
 #include <boost/scoped_ptr.hpp>
 #include <gazebo/common/Plugin.hh>
-#include <ros/ros.h>
-#include <std_msgs/Bool.h>
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+#include <gazebo_ros/node.hpp>
+
+//#include <std_msgs/Bool.h>
+#include <std_msgs/msg/bool.hpp>
 
 namespace gazebo
 {
@@ -39,16 +44,19 @@ class CustomBatteryConsumerROSPlugin : public ModelPlugin
   public: void Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf);
 
   /// \brief Callback for the device state topic subscriber
-  protected: void UpdateDeviceState(const std_msgs::Bool::ConstPtr &_msg);
+  protected: void UpdateDeviceState(const std_msgs::msg::Bool::ConstPtr &_msg);
 
   /// \brief Update power load
   protected: void UpdatePowerLoad(double _powerLoad = 0.0);
 
   /// \brief Pointer to this ROS node's handle.
-  protected: boost::scoped_ptr<ros::NodeHandle> rosNode;
+  //protected: boost::scoped_ptr<ros::NodeHandle> rosNode;
+  protected: gazebo_ros::Node::SharedPtr rosNode;
 
   /// \brief Subscriber to the device state flag
-  protected: ros::Subscriber deviceStateSub;
+  //protected: ros::Subscriber deviceStateSub;
+  protected: rclcpp::Subscription<std_msgs::msg::Bool> deviceStateSub;
+
 
   /// \brief Pointer to battery.
   protected: common::BatteryPtr battery;

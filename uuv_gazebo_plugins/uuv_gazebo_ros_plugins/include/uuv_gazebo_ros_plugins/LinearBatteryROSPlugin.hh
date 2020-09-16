@@ -21,7 +21,10 @@
 #include <gazebo/physics/Model.hh>
 #include <gazebo/common/Plugin.hh>
 #include <boost/scoped_ptr.hpp>
-#include <ros/ros.h>
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+
 #include <sensor_msgs/BatteryState.h>
 #include <string>
 

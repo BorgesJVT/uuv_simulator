@@ -27,7 +27,7 @@ JointStatePublisher::JointStatePublisher()
 
 JointStatePublisher::~JointStatePublisher()
 {
-    this->node->shutdown();
+    
 }
 
 void JointStatePublisher::Load(gazebo::physics::ModelPtr _parent,
@@ -39,14 +39,18 @@ void JointStatePublisher::Load(gazebo::physics::ModelPtr _parent,
 
   this->world = this->model->GetWorld();
 
-  if (!ros::isInitialized())
+  if (!rclcpp::is_initialized())
   {
     gzerr << "ROS was not initialized. Closing plugin..." << std::endl;
     return;
   }
 
-  this->node = boost::shared_ptr<ros::NodeHandle>(
-    new ros::NodeHandle(this->robotNamespace));
+// Initialize ROS node ???????????????????????????????????
+// @TODO Ao inves de operar em sdf, pode ser usado o nó no robotnamespace abaixo?
+  this->rosNode=gazebo_ros::Node::Get(_sdf);
+
+  //this->node = boost::shared_ptr<ros::NodeHandle>(
+  //  new ros::NodeHandle(this->robotNamespace));
   // Retrieve the namespace used to publish the joint states
   if (_sdf->HasElement("robotNamespace"))
     this->robotNamespace = _sdf->Get<std::string>("robotNamespace");
@@ -93,9 +97,8 @@ void JointStatePublisher::Load(gazebo::physics::ModelPtr _parent,
   this->updatePeriod = 1.0 / this->updateRate;
 
   // Advertise the joint states topic
-  this->jointStatePub =
-    this->node->advertise<sensor_msgs::JointState>(
-      this->robotNamespace + "/joint_states", 1);
+  this->jointStatePub = this->rosNode->create_publisher<sensor_msgs::msg::JointState>(this->robotNamespace + "/joint_states", 1);
+    
 #if GAZEBO_MAJOR_VERSION >= 8
   this->lastUpdate = this->world->SimTime();
 #else
@@ -122,8 +125,9 @@ void JointStatePublisher::OnUpdate(const gazebo::common::UpdateInfo &_info)
 
 void JointStatePublisher::PublishJointStates()
 {
-  ros::Time stamp = ros::Time::now();
-  sensor_msgs::JointState jointState;
+  rclcpp::Time stamp = this->rosNode->get_clock()->now(); //Rever qual NODE é o de controle de estado da junta
+
+  sensor_msgs::msg::JointState jointState;
 
   jointState.header.stamp = stamp;
   // Resize containers
@@ -157,7 +161,7 @@ void JointStatePublisher::PublishJointStates()
     ++i;
   }
 
-  this->jointStatePub.publish(jointState);
+  this->jointStatePub->publish(jointState);
 }
 
 bool JointStatePublisher::IsIgnoredJoint(std::string _jointName)

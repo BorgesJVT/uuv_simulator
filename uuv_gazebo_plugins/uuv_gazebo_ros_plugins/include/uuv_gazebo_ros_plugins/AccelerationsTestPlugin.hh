@@ -19,11 +19,21 @@
 #include <map>
 #include <string>
 
+//CARECE DISSO?
+#include <gazebo/common/Plugin.hh>
+
 #include <gazebo/gazebo.hh>
 #include <gazebo/msgs/msgs.hh>
 
+#include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/accel.hpp>
+#include <gazebo_ros/node.hpp>
+
+
 #include <uuv_gazebo_plugins/HydrodynamicModel.hh>
 #include <uuv_gazebo_plugins/Def.hh>
+
+
 
 namespace gazebo
 {
@@ -61,18 +71,19 @@ class AccelerationsTestPlugin : public gazebo::ModelPlugin
 
   /// \brief Gazebo node
   protected: gazebo::transport::NodePtr node;
+ 
 
   /// \brief Link of test object
   protected: physics::LinkPtr link;
 
   // ROS things
-  private: boost::scoped_ptr<ros::NodeHandle> rosNode;
+  private: gazebo_ros::Node::SharedPtr rosNode;
+  
+  protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr pub_accel_b_gazebo;
+  protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr pub_accel_b_numeric;
 
-  protected: ros::Publisher pub_accel_b_gazebo;
-  protected: ros::Publisher pub_accel_b_numeric;
-
-  protected: ros::Publisher pub_accel_w_gazebo;
-  protected: ros::Publisher pub_accel_w_numeric;
+  protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr pub_accel_w_gazebo;
+  protected: rclcpp::Publisher<geometry_msgs::msg::Accel>::SharedPtr pub_accel_w_numeric;
 
   /// \brief Velocity of link with respect to world frame in previous time step.
   Eigen::Vector6d last_w_v_w_b;

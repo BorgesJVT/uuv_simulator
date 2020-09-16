@@ -24,7 +24,13 @@
 #include <gazebo/transport/transport.hh>
 
 
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+//#include "rclcpp/publisher.hpp"
+//#include <std_msgs/Bool.h>
 #include <geometry_msgs/msg/accel.hpp>
+
 
 #include <uuv_gazebo_ros_plugins/AccelerationsTestPlugin.hh>
 #include <uuv_gazebo_plugins/Def.hh>
@@ -66,6 +72,9 @@ void AccelerationsTestPlugin::Load(physics::ModelPtr _model,
   this->node->Init(this->world->GetName());
 #endif
 
+  // Initialize ROS node ???????????????????????????????????
+  this->rosNode=gazebo_ros::Node::Get(_sdf);
+
   std::string link_name;
   if (_sdf->HasElement("link_name"))
     link_name = _sdf->GetElement("link_name")->Get<std::string>();
@@ -80,7 +89,7 @@ void AccelerationsTestPlugin::Load(physics::ModelPtr _model,
   this->Connect();
 
   // ROS:
-  if (!ros::isInitialized())
+  if (!rclcpp::is_initialized())
   {
     gzerr << "Not loading plugin since ROS has not been "
           << "properly initialized.  Try starting gazebo with ros plugin:\n"
@@ -88,17 +97,10 @@ void AccelerationsTestPlugin::Load(physics::ModelPtr _model,
     return;
   }
 
-  this->rosNode.reset(new ros::NodeHandle(""));
-
-  this->pub_accel_w_gazebo =
-    this->rosNode->advertise<geometry_msgs::Accel>("accel_w_gazebo", 10);
-  this->pub_accel_w_numeric =
-    this->rosNode->advertise<geometry_msgs::Accel>("accel_w_numeric", 10);
-
-  this->pub_accel_b_gazebo =
-    this->rosNode->advertise<geometry_msgs::Accel>("accel_b_gazebo", 10);
-  this->pub_accel_b_numeric =
-    this->rosNode->advertise<geometry_msgs::Accel>("accel_b_numeric", 10);
+  this->pub_accel_w_gazebo = this->rosNode->create_publisher<geometry_msgs::msg::Accel>("accel_w_gazebo", 10);
+  this->pub_accel_w_numeric = this->rosNode->create_publisher<geometry_msgs::msg::Accel>("accel_w_numeric", 10);
+  this->pub_accel_b_gazebo = this->rosNode->create_publisher<geometry_msgs::msg::Accel>("accel_b_gazebo", 10);
+  this->pub_accel_b_numeric = this->rosNode->create_publisher<geometry_msgs::msg::Accel>("accel_b_numeric", 10);
 }
 
 /////////////////////////////////////////////////
@@ -107,9 +109,9 @@ void AccelerationsTestPlugin::Init()
   // Doing nothing for now
 }
 
-geometry_msgs::Accel accelFromEigen(const Eigen::Vector6d& acc)
+geometry_msgs::msg::Accel accelFromEigen(const Eigen::Vector6d& acc)
 {
-  geometry_msgs::Accel amsg;
+  geometry_msgs::msg::Accel amsg;
   amsg.linear.x = acc[0];
   amsg.linear.y = acc[1];
   amsg.linear.z = acc[2];
@@ -199,11 +201,11 @@ Eigen::Vector6d gazebo_b_a_w_b = EigenStack(
   Eigen::Vector6d num_b_a_w_b = R6_b_w_eigen * num_w_a_w_b;
 
   // Publish all four variants via ROS for easy comparison
-  this->pub_accel_w_gazebo.publish(accelFromEigen(gazebo_w_a_w_b));
-  this->pub_accel_b_gazebo.publish(accelFromEigen(gazebo_b_a_w_b));
+  this->pub_accel_w_gazebo->publish(accelFromEigen(gazebo_w_a_w_b));
+  this->pub_accel_b_gazebo->publish(accelFromEigen(gazebo_b_a_w_b));
 
-  this->pub_accel_w_numeric.publish(accelFromEigen(num_w_a_w_b));
-  this->pub_accel_b_numeric.publish(accelFromEigen(num_b_a_w_b));
+  this->pub_accel_w_numeric->publish(accelFromEigen(num_w_a_w_b));
+  this->pub_accel_b_numeric->publish(accelFromEigen(num_b_a_w_b));
 
   last_w_v_w_b = gazebo_w_v_w_b;
   lastTime = _info.simTime;

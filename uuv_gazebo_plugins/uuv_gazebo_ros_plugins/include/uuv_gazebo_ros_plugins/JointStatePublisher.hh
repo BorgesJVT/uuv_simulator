@@ -31,8 +31,14 @@
 #include <gazebo/physics/Model.hh>
 #include <gazebo/physics/Joint.hh>
 #include <gazebo/physics/World.hh>
-#include <ros/ros.h>
-#include <sensor_msgs/JointState.h>
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+#include <gazebo_ros/node.hpp>
+
+//#include <sensor_msgs/JointState.h>
+#include <sensor_msgs/msg/joint_state.hpp>
+
 #include <sstream>
 
 namespace uuv_simulator_ros
@@ -57,7 +63,8 @@ class JointStatePublisher : public gazebo::ModelPlugin
 
   private: gazebo::event::ConnectionPtr updateConnection;
 
-  private: boost::shared_ptr<ros::NodeHandle> node;
+  //private: boost::shared_ptr<ros::NodeHandle> node;
+  private: gazebo_ros::Node::SharedPtr rosNode;
 
   private: std::string robotNamespace;
 
@@ -69,8 +76,12 @@ class JointStatePublisher : public gazebo::ModelPlugin
 
   private: gazebo::common::Time lastUpdate;
 
-  private: ros::Publisher jointStatePub;
+  //private: ros::Publisher jointStatePub;
+  private: rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr jointStatePub;
 };
 }
 
 #endif  // __JOINT_STATE_PUBLISHER_HH__
+
+
+//BASED ON https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/src/gazebo_ros_joint_state_publisher.cpp

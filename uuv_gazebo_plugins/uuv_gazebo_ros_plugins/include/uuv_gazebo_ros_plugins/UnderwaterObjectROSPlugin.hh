@@ -26,17 +26,26 @@
 #include <boost/scoped_ptr.hpp>
 #include <gazebo/gazebo.hh>
 #include <gazebo/common/Plugin.hh>
-#include <ros/ros.h>
-#include <geometry_msgs/WrenchStamped.h>
-#include <geometry_msgs/Vector3.h>
-#include <std_msgs/Bool.h>
-#include <visualization_msgs/Marker.h>
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+
+//#include <geometry_msgs/WrenchStamped.h>
+#include <geometry_msgs/msg/wrench_stamped.hpp>
+//#include <geometry_msgs/Vector3.h>
+#include <geometry_msgs/msg/vector3.hpp>
+//#include <std_msgs/Bool.h>
+#include <std_msgs/msg/bool.hpp>
+//#include <visualization_msgs/Marker.h>
+#include <visualization_msgs/msg/marker.hpp>
+
 #include <uuv_gazebo_ros_plugins_msgs/SetUseGlobalCurrentVel.h>
 #include <uuv_gazebo_ros_plugins_msgs/UnderwaterObjectModel.h>
 #include <uuv_gazebo_ros_plugins_msgs/GetModelProperties.h>
 #include <uuv_gazebo_ros_plugins_msgs/SetFloat.h>
 #include <uuv_gazebo_ros_plugins_msgs/GetFloat.h>
-#include <geometry_msgs/TransformStamped.h>
+//#include <geometry_msgs/TransformStamped.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2/LinearMath/Quaternion.h>
 

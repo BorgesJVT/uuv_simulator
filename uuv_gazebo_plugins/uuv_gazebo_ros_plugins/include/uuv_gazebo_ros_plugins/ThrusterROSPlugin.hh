@@ -24,7 +24,10 @@
 
 #include <boost/scoped_ptr.hpp>
 #include <gazebo/common/Plugin.hh>
-#include <ros/ros.h>
+
+//#include <ros/ros.h>
+#include "rclcpp/rclcpp.hpp"
+
 #include <uuv_gazebo_ros_plugins_msgs/FloatStamped.h>
 #include <geometry_msgs/WrenchStamped.h>
 #include <std_msgs/Bool.h>

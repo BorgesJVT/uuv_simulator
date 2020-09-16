@@ -65,7 +65,7 @@ void CustomBatteryConsumerROSPlugin::Load(physics::ModelPtr _parent,
   {
     std::string topicName = _sdf->Get<std::string>("topic_device_state");
     if (!topicName.empty())
-        this->deviceStateSub = this->rosNode->subscribe<std_msgs::Bool>(
+        this->deviceStateSub = this->rosNode->subscribe<std_msgs::msg::Bool>(
           topicName, 1,
           boost::bind(&CustomBatteryConsumerROSPlugin::UpdateDeviceState,
           this, _1));
