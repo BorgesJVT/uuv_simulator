@@ -223,18 +223,16 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
 
   impl_->ros_node_ = gazebo_ros::Node::Get(_sdf);
 
-
-
-  auto logger = rclcpp::get_logger("thruster_ros_plugin"); //Depois saber o npome do plugin
+  auto logger = rclcpp::get_logger("thruster_plugin"); //Depois saber o nome do plugin
 
   // Target link
-  if (!_sdf->HasElement("link_name")) { //SUBSTITUIR link_name por linkName caso o sdf do uvv se matenha
-    RCLCPP_ERROR(logger, "Trhster plugin missing <link_name>, cannot proceed");
+  if (!_sdf->HasElement("linkName")) { 
+    RCLCPP_ERROR(logger, "Trhster plugin missing <linkName>, cannot proceed");
     return;
   }
 
   // Retrieve the link name on which the thrust will be applied  
-  auto link_name = _sdf->GetElement("link_name")->Get<std::string>();
+  auto link_name = _sdf->GetElement("linkName")->Get<std::string>();
   
   impl_->thrusterLink = _model->GetLink(link_name);
   if (!impl_->thrusterLink) {
@@ -258,14 +256,14 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
         DynamicsFactory::GetInstance().CreateDynamics(
           _sdf->GetElement("dynamics")));
 
-  // Thrust conversion function
-  if (!_sdf->HasElement("conversion")) {
-    RCLCPP_ERROR(logger, "Could not find conversion function.");
-    return;
-  }
-  impl_->conversionFunction.reset(
-        ConversionFunctionFactory::GetInstance().CreateConversionFunction(
-          _sdf->GetElement("conversion")));
+  //// Thrust conversion function ANALISAR PQ ESSE TRECHO FICA SEM CARREGAR O ROBO (waiting)
+  // if (!_sdf->HasElement("conversion")) {
+  //   RCLCPP_ERROR(logger, "Could not find conversion function.");
+  //   return;
+  // }
+  // impl_->conversionFunction.reset(
+  //       ConversionFunctionFactory::GetInstance().CreateConversionFunction(
+  //         _sdf->GetElement("conversion")));
 
 
   // Optional paramters: 
@@ -335,31 +333,30 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
   // Advertise the thrust topic
   auto thrust_topic_name = impl_->topicPrefix + "thrust";
   impl_->thrustTopicPublisher =
-      impl_->gazebo_node_->Advertise<gazebo::msgs::Vector3d>(thrust_topic_name); //ESSA CONVERSÂO ESTÁ ERRADA
+      impl_->gazebo_node_->Advertise<gazebo::msgs::Vector3d>(thrust_topic_name);
 
-  
+
   // Subscribe to the input signal topic
   auto input_signal_topic_name = impl_->topicPrefix + "input";
   impl_->InputSignalSubscriber(input_signal_topic_name);
 
-
-  // Connect the update event
-  impl_->update_connection = gazebo::event::Events::ConnectWorldUpdateBegin(
-    std::bind(&ThrusterPluginPrivate::OnUpdate, impl_.get(), std::placeholders::_1));
+  // Connect the update event 
+//  impl_->update_connection = gazebo::event::Events::ConnectWorldUpdateBegin(
+//  std::bind(&ThrusterPluginPrivate::OnUpdate, impl_.get(), std::placeholders::_1));
 
   impl_->thrusterAxis = impl_->joint->WorldPose().Rot().RotateVectorReverse(impl_->joint->GlobalAxis(0));
 
-//***************************************************************//
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 // ROS PLUGINS LOADS
-    try {
-    ThrusterPlugin::Load(_model, _sdf);
-  } catch(gazebo::common::Exception &_e)
-  {
-    gzerr << "Error loading plugin."
-          << "Please ensure that your model is correct."
-          << '\n';
-    return;
-  }
+  //TA BUGADO AQUI   try {
+  //TA BUGADO AQUI   ThrusterPlugin::Load(_model, _sdf);
+  //TA BUGADO AQUI } catch(gazebo::common::Exception &_e)
+  //TA BUGADO AQUI {
+  //TA BUGADO AQUI   gzerr << "Error loading plugin."
+  //TA BUGADO AQUI         << "Please ensure that your model is correct."
+  //TA BUGADO AQUI         << '\n';
+  //TA BUGADO AQUI   return;
+  //TA BUGADO AQUI }
 
   // if (!rclcpp::is_initialized())
   // {
@@ -368,7 +365,8 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
   //         << "  gazebo -s libgazebo_ros_api_plugin.so\n";
   //   return;
   // }
- 
+//SERVICOS NAO RODANDO MAS COMPILA
+/*{
   impl_->set_thruste_efficiecy_srv = impl_->ros_node_->create_service<uuv_gazebo_ros_plugins_msgs::srv::SetThrusterEfficiency>
       (
       impl_->topicPrefix + "set_thrust_force_efficiency", 
@@ -411,13 +409,12 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
       std::bind(&ThrusterPluginPrivate::GetThrusterConversionFcn, impl_.get(), std::placeholders::_1, std::placeholders::_2)
       );
 
-
    impl_->subThrustReference = impl_->ros_node_->create_subscription<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>
               (
                 impl_->command_subscriber->GetTopic(), 10,
                 std::bind(&ThrusterPluginPrivate::SetThrustReference, impl_.get(), std::placeholders::_1)
               );
-
+ 
   impl_->pubThrust = impl_->ros_node_->create_publisher<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>(
     impl_->thrustTopicPublisher->GetTopic(), 10);
 
@@ -433,17 +430,19 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
 
   impl_->pubDynamicStateEff = impl_->ros_node_->create_publisher<std_msgs::msg::Float64>(
     impl_->topicPrefix + "dynamic_state_efficiency", 1);
-
-  gzmsg << "Thruster #" << impl_->thrusterID << " initialized" << std::endl
-    << "\t- Link: " << impl_->thrusterLink->GetName() << std::endl
-    << "\t- Robot model: " << _model->GetName() << std::endl
-    << "\t- Input command topic: " <<
-      impl_->command_subscriber->GetTopic() << std::endl
-    << "\t- Thrust output topic: " <<
-      impl_->thrustTopicPublisher->GetTopic() << std::endl;
-
+}*/
+  
+  //ANALISAR PQ ESSE TRECHO FICA SEM CARREGAR O ROBO (waiting)
+  // gzmsg << "Thruster #" << impl_->thrusterID << " initialized" << std::endl
+  //   << "\t- Link: " << impl_->thrusterLink->GetName() << std::endl
+  //   << "\t- Robot model: " << _model->GetName() << std::endl
+  //   << "\t- Input command topic: " <<
+  //     impl_->command_subscriber->GetTopic() << std::endl
+  //   << "\t- Thrust output topic: " <<
+  //     impl_->thrustTopicPublisher->GetTopic() << std::endl;
+/*
   impl_->rosPublishConnection = gazebo::event::Events::ConnectWorldUpdateBegin(
-    std::bind(&ThrusterPluginPrivate::RosPublishStates, impl_.get()) );
+    std::bind(&ThrusterPluginPrivate::RosPublishStates, impl_.get()) );*/
 
 // FIM ROS PLUGINS LOADS
 //---------------------------------------------------//
@@ -464,6 +463,10 @@ void ThrusterPluginPrivate::InputSignalSubscriber(std::string &topic)
         this);
 }
 
+// void ThrusterPlugin::Reset()
+// {
+//     impl_->thrusterDynamics->Reset();
+// }
 
 /////////////////////////////////////////////////
 void ThrusterPluginPrivate::OnUpdate(const gazebo::common::UpdateInfo &_info)
@@ -520,7 +523,7 @@ void ThrusterPluginPrivate::OnUpdate(const gazebo::common::UpdateInfo &_info)
 
 
 
-//***************************************************************//
+//**************************************************************/
 // ROS PLUGINS FUNCTIONS
 
 /////////////////////////////////////////////////
@@ -686,14 +689,14 @@ bool ThrusterPluginPrivate::GetThrusterConversionFcn(
 
   if (!_res->fcn.function_name.compare("Basic"))
   {
-    gzmsg << "ThrusterROSPlugin::GetThrusterConversionFcn::Basic" << std::endl;
+    gzmsg << "ThrusterPlugin::GetThrusterConversionFcn::Basic" << std::endl;
     _res->fcn.tags.push_back("rotor_constant");
     this->conversionFunction->GetParam("rotor_constant", param);
     _res->fcn.data.push_back(param);
   }
   else if (!_res->fcn.function_name.compare("Bessa"))
   {
-    gzmsg << "ThrusterROSPlugin::GetThrusterConversionFcn::Bessa" << std::endl;
+    gzmsg << "ThrusterPlugin::GetThrusterConversionFcn::Bessa" << std::endl;
     _res->fcn.tags.push_back("rotor_constant_l");
     this->conversionFunction->GetParam("rotor_constant_l", param);
     _res->fcn.data.push_back(param);
@@ -712,7 +715,7 @@ bool ThrusterPluginPrivate::GetThrusterConversionFcn(
   }
   else if (!_res->fcn.function_name.compare("LinearInterp"))
   {
-    gzmsg << "ThrusterROSPlugin::GetThrusterConversionFcn::LinearInterp" << std::endl;
+    gzmsg << "ThrusterPlugin::GetThrusterConversionFcn::LinearInterp" << std::endl;
     std::map<double, double> table = this->conversionFunction->GetTable();
 
     for (auto& item : table)
@@ -728,6 +731,6 @@ bool ThrusterPluginPrivate::GetThrusterConversionFcn(
 
 // FIM ROS PLUGINS FUNCTIONS
 //---------------------------------------------------// 
-
+GZ_REGISTER_MODEL_PLUGIN(ThrusterPlugin)
 
 } // namespace gazebo_plugins

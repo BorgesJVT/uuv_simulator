@@ -29,7 +29,7 @@ protected:
   void Load(gazebo::physics::ModelPtr model, sdf::ElementPtr sdf) override;
     
   // Documentation inherited
-  void Reset() override;
+  //void Reset() override;
 
   //// Optional callback to be called at every simulation iteration.
   //virtual void OnUpdate();

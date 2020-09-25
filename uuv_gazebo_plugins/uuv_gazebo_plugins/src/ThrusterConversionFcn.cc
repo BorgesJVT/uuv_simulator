@@ -17,7 +17,7 @@
 
 #include <uuv_gazebo_plugins/Def.hh>
 
-namespace gazebo
+namespace uuv_gazebo
 {
 /////////////////////////////////////////////////
 ConversionFunction* ConversionFunctionFactory::CreateConversionFunction(
@@ -242,8 +242,8 @@ ConversionFunction* ConversionFunctionLinearInterp::create(sdf::ElementPtr _sdf)
     return NULL;
   }
 
-  std::vector<double> in = Str2Vector(_sdf->Get<std::string>("inputValues"));
-  std::vector<double> out = Str2Vector(_sdf->Get<std::string>("outputValues"));
+  std::vector<double> in = gazebo::Str2Vector(_sdf->Get<std::string>("inputValues"));
+  std::vector<double> out = gazebo::Str2Vector(_sdf->Get<std::string>("outputValues"));
 
   if (in.size() < 1)
   {
