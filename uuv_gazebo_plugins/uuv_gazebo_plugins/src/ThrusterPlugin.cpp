@@ -6,12 +6,16 @@
 #include <gazebo/physics/World.hh>
 #include <gazebo/transport/transport.hh>
 
+
 #include <boost/make_shared.hpp> //For gazebo transport
 
 #include <uuv_gazebo_plugins/ThrusterPlugin.hpp>
 #include <uuv_gazebo_plugins/ThrusterConversionFcn.hh> //REFATORAR?
 #include <uuv_gazebo_plugins/Dynamics.hh>              //REFATORAR?
 
+//#include "Double.pb.h"
+#include <geometry_msgs/msg/vector3.hpp>
+#include <std_msgs/msg/float64.hpp>
 
 //*******************************//
  // ROS PLUGINS INCLUDES
@@ -44,7 +48,9 @@ public:
   void OnUpdate(const gazebo::common::UpdateInfo & _info);
 
   /// \brief Callback for the input topic subscriber
-  void UpdateInput(ConstDoublePtr &_msg);
+  //void UpdateInput(ConstDoublePtr &_msg);
+  //void UpdateInput(const std::shared_ptr<uuv_gazebo_plugins_msgs::msgs::Double> & _msg);
+  void UpdateInput(const std_msgs::msg::Float64::SharedPtr _msg);
 
   /// \brief Thruster dynamic model
   std::shared_ptr<uuv_gazebo::Dynamics> thrusterDynamics;
@@ -52,21 +58,22 @@ public:
   /// \brief Thruster conversion function
   std::shared_ptr<uuv_gazebo::ConversionFunction> conversionFunction;
 
+  /// \brief Pointer to the thruster link
+  gazebo::physics::LinkPtr thrusterLink;
+  
   /// \brief Pointer to the update event connection
   gazebo::event::ConnectionPtr update_connection;
 
-  /// \brief Pointer to the thruster link
-  gazebo::physics::LinkPtr thrusterLink;
-
   /// \brief Gazebo node used to talk to XXX----XXXX?
-  gazebo::transport::NodePtr gazebo_node_;
+  //gazebo::transport::NodePtr gazebo_node_;
 
   /// \brief Subscriber to the reference signal topic.
-  gazebo::transport::SubscriberPtr command_subscriber;
-  void InputSignalSubscriber(std::string &_msg);
-
+  //gazebo::transport::SubscriberPtr commandSubscriber;
+  rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr commandSubscriber;
+  
   /// \brief Publisher to the output thrust topic
-  gazebo::transport::PublisherPtr thrustTopicPublisher;
+  //gazebo::transport::PublisherPtr thrustTopicPublisher;
+  rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr thrustTopicPublisher;
 
   /// \brief Input command, typically desired angular velocity of the rotor.
   double input_command;
@@ -117,7 +124,7 @@ public:
 //***************************************************************//
 // ROS PLUGINS HEADER
 
-    /// \brief Publish thruster state via ROS.
+   /// \brief Publish thruster state via ROS.
     void RosPublishStates();
 
     /// \brief Set new set point (desired thrust [N]) for thruster.
@@ -189,7 +196,7 @@ public:
     /// \brief Publisher for the dynamic state efficiency
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr pubDynamicStateEff;
 
-    /// \brief Connection for callbacks on update world.
+    /// \brief Connection for callbacks on update world. //Usando o update_connection 
     gazebo::event::ConnectionPtr rosPublishConnection;
 
     /// \brief Period after which we should publish a message via ROS.
@@ -210,6 +217,9 @@ ThrusterPlugin::ThrusterPlugin()
 
 ThrusterPlugin::~ThrusterPlugin()
 {
+  if ( impl_->update_connection )  {
+    impl_->commandSubscriber.reset();
+  }
 }
 
 /////////////////////////////////////////////////
@@ -217,17 +227,13 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
                           sdf::ElementPtr _sdf)
 {
 
-    // Create gazebo transport node
-  impl_->gazebo_node_ = boost::make_shared<gazebo::transport::Node>();
-  impl_->gazebo_node_->Init(_model->GetWorld()->Name());
-
   impl_->ros_node_ = gazebo_ros::Node::Get(_sdf);
 
   auto logger = rclcpp::get_logger("thruster_plugin"); //Depois saber o nome do plugin
 
   // Target link
   if (!_sdf->HasElement("linkName")) { 
-    RCLCPP_ERROR(logger, "Trhster plugin missing <linkName>, cannot proceed");
+    RCLCPP_ERROR(logger, "Truhster plugin missing <linkName>, cannot proceed");
     return;
   }
 
@@ -246,6 +252,7 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
     return;
   }
   impl_->thrusterID = _sdf->Get<int>("thrusterID");
+  gzmsg << "Thruster #" << impl_->thrusterID << " initialized" << std::endl;
 
   // Thruster dynamics configuration:
   if (!_sdf->HasElement("dynamics")) {
@@ -255,16 +262,16 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
   impl_->thrusterDynamics.reset(
         DynamicsFactory::GetInstance().CreateDynamics(
           _sdf->GetElement("dynamics")));
-
+  
   //// Thrust conversion function ANALISAR PQ ESSE TRECHO FICA SEM CARREGAR O ROBO (waiting)
-  // if (!_sdf->HasElement("conversion")) {
-  //   RCLCPP_ERROR(logger, "Could not find conversion function.");
-  //   return;
-  // }
-  // impl_->conversionFunction.reset(
-  //       ConversionFunctionFactory::GetInstance().CreateConversionFunction(
-  //         _sdf->GetElement("conversion")));
-
+  if (!_sdf->HasElement("conversion")) {
+    RCLCPP_ERROR(logger, "Could not find conversion function.");
+    return;
+  }
+  impl_->conversionFunction.reset(
+        ConversionFunctionFactory::GetInstance().CreateConversionFunction(
+          _sdf->GetElement("conversion")));
+  
 
   // Optional paramters: 
   //
@@ -314,7 +321,7 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
       impl_->thrustEfficiency = 1.0;
     }
   }
-
+  
   if (_sdf->HasElement("propeller_efficiency"))
   {
     impl_->propellerEfficiency = _sdf->Get<double>("propeller_efficiency");
@@ -325,54 +332,38 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
     }
   }
 
+  impl_->thrusterAxis = impl_->joint->WorldPose().Rot().RotateVectorReverse(impl_->joint->GlobalAxis(0));
+  
   // Root string for topics
   std::stringstream strs;
-  strs << "/" << _model->GetName() << "/thrusters/" << impl_->thrusterID << "/";
+  strs << "/" << _model->GetName() << "/thrusters/id" << impl_->thrusterID << "/";
   impl_->topicPrefix = strs.str();
 
   // Advertise the thrust topic
   auto thrust_topic_name = impl_->topicPrefix + "thrust";
-  impl_->thrustTopicPublisher =
-      impl_->gazebo_node_->Advertise<gazebo::msgs::Vector3d>(thrust_topic_name);
 
+  impl_->thrustTopicPublisher = impl_->ros_node_->create_publisher<geometry_msgs::msg::Vector3>(thrust_topic_name, 1);
 
   // Subscribe to the input signal topic
   auto input_signal_topic_name = impl_->topicPrefix + "input";
-  impl_->InputSignalSubscriber(input_signal_topic_name);
 
-  // Connect the update event 
-//  impl_->update_connection = gazebo::event::Events::ConnectWorldUpdateBegin(
-//  std::bind(&ThrusterPluginPrivate::OnUpdate, impl_.get(), std::placeholders::_1));
+  impl_->commandSubscriber = impl_->ros_node_->create_subscription<std_msgs::msg::Float64>
+              (
+                input_signal_topic_name , 10,
+                std::bind(&ThrusterPluginPrivate::UpdateInput, impl_.get(), std::placeholders::_1)
+              );
 
-  impl_->thrusterAxis = impl_->joint->WorldPose().Rot().RotateVectorReverse(impl_->joint->GlobalAxis(0));
+  impl_->update_connection = gazebo::event::Events::ConnectWorldUpdateBegin(
+     std::bind(&ThrusterPluginPrivate::OnUpdate, impl_.get(), std::placeholders::_1));
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
-// ROS PLUGINS LOADS
-  //TA BUGADO AQUI   try {
-  //TA BUGADO AQUI   ThrusterPlugin::Load(_model, _sdf);
-  //TA BUGADO AQUI } catch(gazebo::common::Exception &_e)
-  //TA BUGADO AQUI {
-  //TA BUGADO AQUI   gzerr << "Error loading plugin."
-  //TA BUGADO AQUI         << "Please ensure that your model is correct."
-  //TA BUGADO AQUI         << '\n';
-  //TA BUGADO AQUI   return;
-  //TA BUGADO AQUI }
-
-  // if (!rclcpp::is_initialized())
-  // {
-  //   gzerr << "Not loading plugin since ROS has not been "
-  //         << "properly initialized.  Try starting gazebo with ros plugin:\n"
-  //         << "  gazebo -s libgazebo_ros_api_plugin.so\n";
-  //   return;
-  // }
-//SERVICOS NAO RODANDO MAS COMPILA
-/*{
+//Services
+{
   impl_->set_thruste_efficiecy_srv = impl_->ros_node_->create_service<uuv_gazebo_ros_plugins_msgs::srv::SetThrusterEfficiency>
       (
       impl_->topicPrefix + "set_thrust_force_efficiency", 
       std::bind(&ThrusterPluginPrivate::SetThrustForceEfficiency, impl_.get(), std::placeholders::_1, std::placeholders::_2) 
       );
-  
+  gzmsg << "BLA2" << std::endl;
   impl_->ros_node_->create_service<uuv_gazebo_ros_plugins_msgs::srv::GetThrusterEfficiency>
       (
       impl_->topicPrefix + "get_thrust_force_efficiency",
@@ -408,19 +399,26 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
       impl_->topicPrefix + "get_thruster_conversion_fcn",
       std::bind(&ThrusterPluginPrivate::GetThrusterConversionFcn, impl_.get(), std::placeholders::_1, std::placeholders::_2)
       );
+}
+{
 
-   impl_->subThrustReference = impl_->ros_node_->create_subscription<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>
+
+  impl_->subThrustReference = impl_->ros_node_->create_subscription<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>
               (
-                impl_->command_subscriber->GetTopic(), 10,
+                impl_->commandSubscriber->get_topic_name(), 10,
                 std::bind(&ThrusterPluginPrivate::SetThrustReference, impl_.get(), std::placeholders::_1)
               );
- 
+
   impl_->pubThrust = impl_->ros_node_->create_publisher<uuv_gazebo_ros_plugins_msgs::msg::FloatStamped>(
-    impl_->thrustTopicPublisher->GetTopic(), 10);
+    impl_->thrustTopicPublisher->get_topic_name(), 10);
+
+
+  auto thuster_wrench_topic_name = impl_->thrustTopicPublisher->get_topic_name() + std::string("_wrench");
 
   impl_->pubThrustWrench =
     impl_->ros_node_->create_publisher<geometry_msgs::msg::WrenchStamped>(
-      impl_->thrustTopicPublisher->GetTopic() + "_wrench", 10);
+      thuster_wrench_topic_name, 10);
+    
 
   impl_->pubThrusterState = impl_->ros_node_->create_publisher<std_msgs::msg::Bool>(
     impl_->topicPrefix + "is_on", 1);
@@ -429,20 +427,13 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
     impl_->topicPrefix + "thrust_efficiency", 1);
 
   impl_->pubDynamicStateEff = impl_->ros_node_->create_publisher<std_msgs::msg::Float64>(
-    impl_->topicPrefix + "dynamic_state_efficiency", 1);
-}*/
-  
-  //ANALISAR PQ ESSE TRECHO FICA SEM CARREGAR O ROBO (waiting)
-  // gzmsg << "Thruster #" << impl_->thrusterID << " initialized" << std::endl
-  //   << "\t- Link: " << impl_->thrusterLink->GetName() << std::endl
-  //   << "\t- Robot model: " << _model->GetName() << std::endl
-  //   << "\t- Input command topic: " <<
-  //     impl_->command_subscriber->GetTopic() << std::endl
-  //   << "\t- Thrust output topic: " <<
-  //     impl_->thrustTopicPublisher->GetTopic() << std::endl;
-/*
+    impl_->topicPrefix + "dynamic_state_efficiency", 1); 
+}
+
+  // Connect the update event 
+ 
   impl_->rosPublishConnection = gazebo::event::Events::ConnectWorldUpdateBegin(
-    std::bind(&ThrusterPluginPrivate::RosPublishStates, impl_.get()) );*/
+     std::bind(&ThrusterPluginPrivate::RosPublishStates, impl_.get()) );
 
 // FIM ROS PLUGINS LOADS
 //---------------------------------------------------//
@@ -450,17 +441,10 @@ void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
 }
 
 /////////////////////////////////////////////////
-void ThrusterPluginPrivate::UpdateInput(ConstDoublePtr &_msg)
+void ThrusterPluginPrivate::UpdateInput(const std_msgs::msg::Float64::SharedPtr _msg)
 {
-  this->input_command = _msg->value();
-}
-
-void ThrusterPluginPrivate::InputSignalSubscriber(std::string &topic)
-{
-
-  this->command_subscriber = this->gazebo_node_->Subscribe(topic,
-        &ThrusterPluginPrivate::UpdateInput, 
-        this);
+  //this->input_command = _msg->value();
+  this->input_command = _msg->data;
 }
 
 // void ThrusterPlugin::Reset()
@@ -471,6 +455,7 @@ void ThrusterPluginPrivate::InputSignalSubscriber(std::string &topic)
 /////////////////////////////////////////////////
 void ThrusterPluginPrivate::OnUpdate(const gazebo::common::UpdateInfo &_info)
 {
+
   GZ_ASSERT(!std::isnan(this->input_command),"nan in this->input_command");
 
   double dynamicsInput;
@@ -490,6 +475,9 @@ void ThrusterPluginPrivate::OnUpdate(const gazebo::common::UpdateInfo &_info)
     // will converge to zero
     dynamicsInput = 0.0;
   }
+  
+  //RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "TESTANDO A BAGAÇA");
+
   dynamicState = this->propellerEfficiency *
     this->thrusterDynamics->update(dynamicsInput, _info.simTime.Double());
 
@@ -515,10 +503,15 @@ void ThrusterPluginPrivate::OnUpdate(const gazebo::common::UpdateInfo &_info)
   }
 
   // Publish thrust:
-  gazebo::msgs::Vector3d thrustMsg;
-  gazebo::msgs::Set (&thrustMsg, ignition::math::Vector3d(this->thrustForce, 0., 0.)  );
+  //gazebo::msgs::Vector3d thrustMsg;
+  geometry_msgs::msg::Vector3 thrustMsg;
+  thrustMsg.x = this->thrustForce;
+  thrustMsg.y = 0.0;
+  thrustMsg.z = 0.0;
+  //gazebo::msgs::Set (&thrustMsg, ignition::math::Vector3d(this->thrustForce, 0., 0.)  );
+  
+  this->thrustTopicPublisher->publish(thrustMsg);
 
-  this->thrustTopicPublisher->Publish(thrustMsg);
 }
 
 
@@ -552,6 +545,7 @@ void ThrusterPluginPrivate::SetRosPublishRate(double _hz)
     this->rosPublishPeriod = 1.0 / _hz;
   else
     this->rosPublishPeriod = 0.;
+
 }
 
 
@@ -559,6 +553,7 @@ void ThrusterPluginPrivate::SetRosPublishRate(double _hz)
 /////////////////////////////////////////////////
 void ThrusterPluginPrivate::RosPublishStates()
 {
+
   // Limit publish rate according to publish period
   if (this->thrustForceStamp - this->lastRosPublishTime >=
       this->rosPublishPeriod)
@@ -596,6 +591,8 @@ void ThrusterPluginPrivate::RosPublishStates()
     std_msgs::msg::Float64 dynStateEffMsg;
     dynStateEffMsg.data = this->propellerEfficiency;
     this->pubDynamicStateEff->publish(dynStateEffMsg);
+
+    //RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "TESTANDO A BAGAÇA");
   }
 }
 
