@@ -1,0 +1,11 @@
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/install/local.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/install.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/list_install_components.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/rebuild_cache.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/edit_cache.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/test.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/uuv_spherical_coordinates_plugin.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/install/strip.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/uuv_underwater_current_plugin.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/uuv_world_plugins_uninstall.dir
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins/CMakeFiles/uninstall.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libuuv_underwater_object_plugin.a  CMakeFiles/uuv_underwater_object_plugin.dir/src/HydrodynamicModel.cc.o CMakeFiles/uuv_underwater_object_plugin.dir/src/BuoyantObject.cc.o
+/usr/bin/ranlib libuuv_underwater_object_plugin.a

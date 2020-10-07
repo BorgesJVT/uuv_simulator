@@ -1,0 +1,15 @@
+source;share/uuv_world_plugins/hook/cmake_prefix_path.ps1
+source;share/uuv_world_plugins/hook/cmake_prefix_path.dsv
+source;share/uuv_world_plugins/hook/cmake_prefix_path.sh
+source;share/uuv_world_plugins/hook/ld_library_path_lib.ps1
+source;share/uuv_world_plugins/hook/ld_library_path_lib.dsv
+source;share/uuv_world_plugins/hook/ld_library_path_lib.sh
+source;share/uuv_world_plugins/hook/ros_package_path.ps1
+source;share/uuv_world_plugins/hook/ros_package_path.dsv
+source;share/uuv_world_plugins/hook/ros_package_path.sh
+source;share/uuv_world_plugins/hook/pkg_config_path.ps1
+source;share/uuv_world_plugins/hook/pkg_config_path.dsv
+source;share/uuv_world_plugins/hook/pkg_config_path.sh
+source;share/uuv_world_plugins/hook/pkg_config_path_multiarch.ps1
+source;share/uuv_world_plugins/hook/pkg_config_path_multiarch.dsv
+source;share/uuv_world_plugins/hook/pkg_config_path_multiarch.sh

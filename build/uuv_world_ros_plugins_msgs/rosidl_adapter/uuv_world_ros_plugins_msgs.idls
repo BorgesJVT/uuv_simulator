@@ -1,0 +1,8 @@
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/SetCurrentModel.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/GetCurrentModel.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/SetCurrentVelocity.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/SetCurrentDirection.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/SetOriginSphericalCoord.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/GetOriginSphericalCoord.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/TransformToSphericalCoord.idl
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_adapter/uuv_world_ros_plugins_msgs:srv/TransformFromSphericalCoord.idl

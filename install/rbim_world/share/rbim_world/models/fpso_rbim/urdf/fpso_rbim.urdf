@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fpso_rbim">
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+  <link
+    name="base_link_ferromagnetic">
+    <inertial>
+      <origin
+        xyz="-2.3511E-15 6.0508E-17 0.78827"
+        rpy="0 0 0" />
+      <mass
+        value="25834000" />
+      <inertia
+        ixx="1156800000"
+        ixy="-2.9352E-07"
+        ixz="-1.6598E-07"
+        iyy="21264000000"
+        iyz="-3.9247E-08"
+        izz="21556000000" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.57 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbim_world/models/fpso_rbim/textures/fpso_rbim.obj" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+        <texture
+          filename="package://rbim_world/models/fpso_rbim/textures/fpso_rbim.obj" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.57 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbim_world/models/fpso_rbim/textures/fpso_rbim.obj" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

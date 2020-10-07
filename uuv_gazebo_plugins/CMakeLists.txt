@@ -102,7 +102,7 @@ list(APPEND UUV_GAZEBO_PLUGINS_LIST uuv_dynamics)
 add_library(uuv_underwater_object_plugin
     src/HydrodynamicModel.cc
     src/BuoyantObject.cc
-    src/UnderwaterObjectPlugin.cpp
+   # src/UnderwaterObjectPlugin.cpp
 )
 ament_target_dependencies(uuv_underwater_object_plugin
     "gazebo_dev"

@@ -1,0 +1,164 @@
+[0.039s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/brenda/RBIM_ws/src/uuv_simulator/rbim_world -DCMAKE_INSTALL_PREFIX=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world
+[1.566s] -- The C compiler identification is GNU 9.3.0
+[2.772s] -- The CXX compiler identification is GNU 9.3.0
+[2.837s] -- Check for working C compiler: /usr/bin/cc
+[2.986s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.986s] -- Detecting C compiler ABI info
+[3.126s] -- Detecting C compiler ABI info - done
+[3.139s] -- Detecting C compile features
+[3.140s] -- Detecting C compile features - done
+[3.143s] -- Check for working CXX compiler: /usr/bin/c++
+[3.282s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.282s] -- Detecting CXX compiler ABI info
+[3.441s] -- Detecting CXX compiler ABI info - done
+[3.455s] -- Detecting CXX compile features
+[3.455s] -- Detecting CXX compile features - done
+[3.457s] -- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.493s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[3.494s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.803s] -- Found gazebo_dev: 3.5.0 (/opt/ros/foxy/share/gazebo_dev/cmake)
+[3.903s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[3.909s] -- Checking for module 'bullet>=2.82'
+[3.956s] --   Found bullet, version 2.88
+[4.189s] -- Found ccd: /usr/include (found suitable version "2.0", minimum required is "2.0") 
+[4.297s] -- Found fcl: /usr/include (found suitable version "0.5.0", minimum required is "0.3.2") 
+[4.419s] -- Found assimp: /usr/include (found version "5.0.0") 
+[4.685s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[5.263s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[5.298s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+[5.306s] -- Looking for ignition-math6 -- found version 6.4.0
+[5.319s] -- Searching for dependencies of ignition-math6
+[5.321s] -- Looking for OGRE...
+[5.322s] -- OGRE_PREFIX_WATCH changed.
+[5.330s] -- Checking for module 'OGRE'
+[5.369s] --   Found OGRE, version 1.9.0
+[5.439s] -- Found Ogre Ghadamon (1.9.0)
+[5.461s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[5.479s] -- Looking for OGRE_Paging...
+[5.502s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[5.502s] -- Looking for OGRE_Terrain...
+[5.518s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[5.518s] -- Looking for OGRE_Property...
+[5.587s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[5.588s] -- Looking for OGRE_RTShaderSystem...
+[5.632s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[5.632s] -- Looking for OGRE_Volume...
+[5.665s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[5.665s] -- Looking for OGRE_Overlay...
+[5.689s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[6.209s] -- Looking for ignition-math6 -- found version 6.4.0
+[6.215s] -- Looking for ignition-transport8 -- found version 8.1.0
+[6.217s] -- Searching for dependencies of ignition-transport8
+[6.267s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+[6.298s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[6.318s] -- Checking for module 'libzmq >= 4'
+[6.400s] --   Found libzmq , version 4.3.2
+[6.568s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[6.585s] -- Checking for module 'uuid'
+[6.651s] --   Found uuid, version 2.34.0
+[6.793s] -- Found UUID: TRUE  
+[6.815s] -- Looking for ignition-msgs5 -- found version 5.3.0
+[6.817s] -- Searching for dependencies of ignition-msgs5
+[6.880s] -- Looking for ignition-math6 -- found version 6.4.0
+[6.911s] -- Checking for module 'tinyxml2'
+[6.984s] --   Found tinyxml2, version 6.2.0
+[7.163s] -- Looking for ignition-msgs5 -- found version 5.3.0
+[7.168s] -- Looking for ignition-common3 -- found version 3.6.0
+[7.169s] -- Searching for dependencies of ignition-common3
+[7.173s] -- Looking for dlfcn.h - found
+[7.174s] -- Looking for libdl - found
+[7.174s] -- Found DL: TRUE  
+[7.190s] -- Searching for <ignition-common3> component [graphics]
+[7.194s] -- Looking for ignition-common3-graphics -- found version 3.6.0
+[7.195s] -- Searching for dependencies of ignition-common3-graphics
+[7.196s] -- Looking for ignition-math6 -- found version 6.4.0
+[7.208s] -- Looking for ignition-fuel_tools4 -- found version 4.2.1
+[7.211s] -- Searching for dependencies of ignition-fuel_tools4
+[7.470s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.68.0")  
+[7.488s] -- Checking for module 'jsoncpp'
+[7.540s] --   Found jsoncpp, version 1.7.4
+[7.627s] -- Found JSONCPP: TRUE  
+[7.644s] -- Checking for module 'libzip'
+[7.709s] --   Found libzip, version 1.5.1
+[7.809s] -- Found ZIP: TRUE  
+[7.810s] -- Looking for ignition-common3 -- found version 3.6.0
+[7.812s] -- Looking for ignition-msgs5 -- found version 5.3.0
+[7.815s] -- Gazebo version: 11.1
+[7.819s] -- Found gazebo_ros: 3.5.0 (/opt/ros/foxy/share/gazebo_ros/cmake)
+[8.002s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.015s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.354s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[8.453s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.654s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.784s] -- Found rmw_implementation_cmake: 1.0.1 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[8.789s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.794s] -- Found Threads: TRUE  
+[9.568s] -- Configuring done
+[9.573s] -- Generating done
+[9.592s] -- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world
+[9.631s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/brenda/RBIM_ws/src/uuv_simulator/rbim_world -DCMAKE_INSTALL_PREFIX=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world
+[9.632s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[10.105s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[10.541s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world
+[10.622s] -- Install configuration: ""
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/sup_ship.launch
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/chiton_world.launch.py
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso_simulation.launch.py
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso_simulation.launch
+[10.625s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/rbim_world.launch
+[10.626s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso.launch
+[10.626s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/rbim_simulator.launch
+[10.626s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds
+[10.626s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world_fpso_and_sup.world
+[10.626s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world_sup.world
+[10.634s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world.world
+[10.634s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models
+[10.634s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed
+[10.635s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/meshes
+[10.635s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/meshes/seabed.stl
+[11.022s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/model.config
+[11.022s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/model.sdf
+[11.022s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim
+[11.022s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/urdf
+[11.022s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/urdf/fpso_rbim.urdf
+[11.023s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/urdf/fpso_rbim.csv
+[11.023s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/meshes
+[11.023s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/meshes/base_link.STL
+[11.150s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/textures
+[11.150s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/textures/fpso_rbim.mtl
+[11.150s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/textures/fpso_rbim.obj
+[11.328s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/model.config
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/model.sdf
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/urdf
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/urdf/fpso.urdf
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/urdf/suport_ship.urdf
+[11.329s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/meshes
+[11.330s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/meshes/suport_ship.STL
+[12.318s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/model.config
+[12.318s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/manifest.xml
+[12.318s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/config
+[12.319s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/config/support.yaml
+[12.319s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/model.sdf
+[12.319s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed
+[12.319s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/meshes
+[12.319s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/meshes/seabed.stl
+[12.838s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/model.config
+[12.838s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/model.sdf
+[12.838s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/package_run_dependencies/rbim_world
+[12.839s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/parent_prefix_path/rbim_world
+[12.839s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/ament_prefix_path.sh
+[12.839s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/ament_prefix_path.dsv
+[12.839s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/path.sh
+[12.840s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/path.dsv
+[12.840s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.bash
+[12.840s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.sh
+[12.840s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.zsh
+[12.840s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.dsv
+[12.841s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.dsv
+[12.841s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/packages/rbim_world
+[12.841s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/cmake/rbim_worldConfig.cmake
+[12.841s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/cmake/rbim_worldConfig-version.cmake
+[12.841s] -- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.xml
+[12.868s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world

@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/get_current_model__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/get_origin_spherical_coord__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_direction__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_model__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_velocity__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_origin_spherical_coord__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/transform_from_spherical_coord__type_support.cpp.o"
+  "CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/transform_to_spherical_coord__type_support.cpp.o"
+  "libuuv_world_ros_plugins_msgs__rosidl_typesupport_c.pdb"
+  "libuuv_world_ros_plugins_msgs__rosidl_typesupport_c.so"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/get_current_model__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/get_origin_spherical_coord__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_direction__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_model__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_current_velocity__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/set_origin_spherical_coord__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/transform_from_spherical_coord__type_support.cpp"
+  "rosidl_typesupport_c/uuv_world_ros_plugins_msgs/srv/transform_to_spherical_coord__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/uuv_world_ros_plugins_msgs__rosidl_typesupport_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

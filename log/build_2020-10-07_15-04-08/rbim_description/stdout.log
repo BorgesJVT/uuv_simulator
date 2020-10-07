@@ -1,0 +1,52 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description
+-- Install configuration: ""
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/meshes
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/meshes/README.md
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/meshes/wheel.STL
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/meshes/base.dae
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/actuators.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/ball.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/default.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/sensors.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/gazebo.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/snippets.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/urdf/base.xacro
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/launch
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/launch/spawn_rbim.launch.py
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/launch/spawn_ball.launch.py
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/ament_index/resource_index/package_run_dependencies/rbim_description
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/ament_index/resource_index/parent_prefix_path/rbim_description
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/environment/ament_prefix_path.sh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/environment/ament_prefix_path.dsv
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/environment/path.sh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/environment/path.dsv
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/local_setup.bash
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/local_setup.sh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/local_setup.zsh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/local_setup.dsv
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.dsv
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/ament_index/resource_index/packages/rbim_description
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/cmake/rbim_descriptionConfig.cmake
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/cmake/rbim_descriptionConfig-version.cmake
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.xml

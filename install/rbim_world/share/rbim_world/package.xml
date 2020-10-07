@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rbim_world</name>
+  <version>0.0.1</version>
+  <description>The chiton_world package</description>
+
+  <maintainer email="joao.torres@fieb.org.br">João Victor Torres Borges</maintainer>
+  <author email="joao.torres@fieb.org.br">João Victor Torres Borges</author>
+
+  <license>CLOSED</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>gazebo_ros</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  <!--
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_media_path="${prefix}/media"/>
+  -->
+  </export>
+</package>

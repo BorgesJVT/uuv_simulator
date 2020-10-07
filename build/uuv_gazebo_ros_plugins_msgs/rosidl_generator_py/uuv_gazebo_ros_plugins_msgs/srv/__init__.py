@@ -1,0 +1,10 @@
+from uuv_gazebo_ros_plugins_msgs.srv._get_float import GetFloat  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._get_list_param import GetListParam  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._get_model_properties import GetModelProperties  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._get_thruster_conversion_fcn import GetThrusterConversionFcn  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._get_thruster_efficiency import GetThrusterEfficiency  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._get_thruster_state import GetThrusterState  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._set_float import SetFloat  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._set_thruster_efficiency import SetThrusterEfficiency  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._set_thruster_state import SetThrusterState  # noqa: F401
+from uuv_gazebo_ros_plugins_msgs.srv._set_use_global_current_vel import SetUseGlobalCurrentVel  # noqa: F401

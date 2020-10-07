@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="suport_ship">
+  <gazebo>
+    <static>true</static>
+  </gazebo>
+  <link
+    name="suport_ship">
+    <inertial>
+      <origin
+        xyz="0.29863 -1.2273 6.8953"
+        rpy="0 0 0" />
+      <mass
+        value="90093" />
+      <inertia
+        ixx="15795000"
+        ixy="27270"
+        ixz="-23290"
+        iyy="2077800"
+        iyz="2002700"
+        izz="16394000" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbim_world/models/sup_ship/meshes/suport_ship.STL" />
+          <scale>0.2 0.2 0.2</scale>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+        <texture
+          filename="package://rbim_world/models/sup_ship/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbim_world/models/sup_ship/meshes/suport_ship.STL" />
+          <scale>0.2 0.2 0.2</scale>
+      </geometry>
+    </collision>
+  </link>
+</robot>
