@@ -226,7 +226,15 @@ ThrusterPlugin::~ThrusterPlugin()
 void ThrusterPlugin::Load(gazebo::physics::ModelPtr _model,
                           sdf::ElementPtr _sdf)
 {
-
+  //DEFAULT ATTRIBUTES
+  impl_->input_command = 0; //  inputCommand(0)
+  impl_->clampMin = std::numeric_limits<double>::lowest();
+  impl_->clampMax = std::numeric_limits<double>::max();
+  impl_->thrustEfficiency = 1.0;
+  impl_->propellerEfficiency = 1.0;
+  impl_->gain = 1.0;
+  impl_->isOn = true;
+  
   impl_->ros_node_ = gazebo_ros::Node::Get(_sdf);
 
   auto logger = rclcpp::get_logger("thruster_plugin"); //Depois saber o nome do plugin
