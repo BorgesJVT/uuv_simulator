@@ -1,2 +1,0 @@
-
-uuv_gazebo_ros_plugins_msgs/ThrusterConversionFcn fcn

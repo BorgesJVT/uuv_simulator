@@ -1,9 +1,0 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/install/strip.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/install/local.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/install.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/list_install_components.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/rebuild_cache.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/edit_cache.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/test.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/rbim_world_uninstall.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/CMakeFiles/uninstall.dir

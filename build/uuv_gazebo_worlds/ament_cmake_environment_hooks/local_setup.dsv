@@ -1,4 +1,0 @@
-source;share/uuv_gazebo_worlds/environment/ament_prefix_path.sh
-source;share/uuv_gazebo_worlds/environment/path.sh
-source;share/uuv_gazebo_worlds/environment/uuv_gazebo_worlds.sh
-source;share/uuv_gazebo_worlds/environment/uuv_gazebo_worlds.dsv

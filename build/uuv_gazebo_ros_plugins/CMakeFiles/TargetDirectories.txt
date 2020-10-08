@@ -1,9 +1,0 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/install/strip.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/install.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/list_install_components.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/rebuild_cache.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/edit_cache.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/test.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/install/local.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/uuv_gazebo_ros_plugins_uninstall.dir
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/CMakeFiles/uninstall.dir
