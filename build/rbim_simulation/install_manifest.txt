@@ -1,0 +1,16 @@
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/launch/rbim_simulation.launch.py
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/package_run_dependencies/rbim_simulation
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/parent_prefix_path/rbim_simulation
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/ament_prefix_path.sh
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/ament_prefix_path.dsv
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/path.sh
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/path.dsv
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.bash
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.sh
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.zsh
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.dsv
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.dsv
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/packages/rbim_simulation
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/cmake/rbim_simulationConfig.cmake
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/cmake/rbim_simulationConfig-version.cmake
+/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.xml

@@ -1,1 +1,4 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs/rosidl_cmake/srv/GetListParam_Response.msg
+
+string description
+string[] tags
+float64[] data

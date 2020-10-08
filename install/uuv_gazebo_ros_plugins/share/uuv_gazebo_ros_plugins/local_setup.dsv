@@ -1,1 +1,2 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins/ament_cmake_environment_hooks/local_setup.dsv
+source;share/uuv_gazebo_ros_plugins/environment/ament_prefix_path.sh
+source;share/uuv_gazebo_ros_plugins/environment/path.sh

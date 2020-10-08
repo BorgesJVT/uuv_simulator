@@ -1,1 +1,1 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs/ament_cmake_environment_hooks/pythonpath.dsv
+prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages

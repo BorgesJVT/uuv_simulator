@@ -1,1 +1,22 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world/launch/rbim_simulator.launch
+<launch>
+    <arg name="gui" default="true"/>
+    <arg name="paused" default="false"/>
+    <node
+    name="spawn_support_ship"
+    pkg="gazebo_ros"
+    type="spawn_model"
+    args="-file $(find rbim_world)/models/sup_ship/urdf/suport_ship.urdf -urdf -model support_ship -x 10 -y 10 -z -3.5"
+    output="screen" />
+
+    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <!-- Edit the name of the world file (example_underwater.world) when using this template -->
+        <arg name="world_name" value="worlds/rbim_world_fpso_and_sup.world"/>
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="$(arg gui)"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+        <arg name="verbose" value="true"/>
+    </include>
+</launch>

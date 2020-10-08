@@ -1,1 +1,2 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds/ament_cmake_environment_hooks/uuv_gazebo_worlds.sh
+ament_prepend_unique_value GAZEBO_MODEL_PATH "$AMENT_CURRENT_PREFIX/share/uuv_gazebo_worlds/models"
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$AMENT_CURRENT_PREFIX/share/uuv_gazebo_worlds/worlds"

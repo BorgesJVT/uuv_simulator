@@ -1,1 +1,16 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/uuv_sensor_ros_plugins_msgs
+msg/ChemicalParticleConcentration.idl
+msg/ChemicalParticleConcentration.msg
+msg/DVL.idl
+msg/DVL.msg
+msg/DVLBeam.idl
+msg/DVLBeam.msg
+msg/PositionWithCovariance.idl
+msg/PositionWithCovariance.msg
+msg/PositionWithCovarianceStamped.idl
+msg/PositionWithCovarianceStamped.msg
+msg/Salinity.idl
+msg/Salinity.msg
+srv/ChangeSensorState.idl
+srv/ChangeSensorState.srv
+srv/ChangeSensorState_Request.msg
+srv/ChangeSensorState_Response.msg

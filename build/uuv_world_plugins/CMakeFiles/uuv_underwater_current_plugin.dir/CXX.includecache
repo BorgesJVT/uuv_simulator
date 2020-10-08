@@ -194,6 +194,10 @@ gazebo/common/Plugin.hh
 memory
 -
 
+/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins/src/uuv_world_plugins_gauss_markov_process.cpp
+uuv_world_plugins/uuv_world_plugins_gauss_markov_process.hpp
+/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins/src/uuv_world_plugins/uuv_world_plugins_gauss_markov_process.hpp
+
 /home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins/src/uuv_world_plugins_underwater_current.cpp
 gazebo/common/Plugin.hh
 -

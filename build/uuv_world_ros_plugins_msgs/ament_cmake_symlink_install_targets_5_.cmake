@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_generator_py/uuv_world_ros_plugins_msgs/libuuv_world_ros_plugins_msgs__python.so" "TARGETS" "uuv_world_ros_plugins_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

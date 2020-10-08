@@ -1,1 +1,2 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_cmake/srv/TransformFromSphericalCoord_Response.msg
+
+geometry_msgs/Vector3 output

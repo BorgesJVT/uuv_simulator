@@ -1,1 +1,25 @@
-/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world/models/fpso_rbim/textures/fpso_rbim.mtl
+#
+# Bunkspeed OBJ Material File
+# http://www.bunkspeed.com
+#
+
+newmtl candy_apple_red
+Kd 0.9686275 0.2588235 0.2588235
+Ks 0.5 0.5 0.5
+illum 2
+
+newmtl black_spray_paint
+Kd 0.05882353 0.05882353 0.05882353
+Ks 0.5 0.5 0.5
+illum 2
+
+newmtl metallic_cool_grey
+Kd 0.6784314 0.6784314 0.7294118
+Ks 0.5 0.5 0.5
+illum 2
+
+newmtl Aluminum_2
+Kd 0.9529412 0.9529412 0.9529412
+Ks 0.9529412 0.9529412 0.9529412
+illum 2
+Ns 99.77804
