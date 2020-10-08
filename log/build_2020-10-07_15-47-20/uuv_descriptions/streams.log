@@ -1,0 +1,46 @@
+[0.055s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/brenda/RBIM_ws/src/uuv_simulator/uuv_descriptions -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions
+[0.177s] -- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.177s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.330s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.391s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.688s] -- Configuring done
+[0.697s] -- Generating done
+[0.698s] -- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions
+[0.706s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/brenda/RBIM_ws/src/uuv_simulator/uuv_descriptions -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions
+[0.706s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions -- -j8 -l8
+[0.746s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions -- -j8 -l8
+[0.797s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions
+[0.811s] -- Install configuration: ""
+[0.811s] -- Execute custom install script
+[0.811s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/launch/upload_rexrov.launch.py
+[0.825s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.dae
+[0.847s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.stl
+[0.866s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/collision.blend
+[0.879s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae
+[0.901s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_default.xacro
+[0.923s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_default_noisy_pose.xacro
+[0.941s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon4.xacro
+[0.955s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon7.xacro
+[0.965s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon_arms.xacro
+[0.975s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_sonar.xacro
+[0.984s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/common.urdf.xacro
+[0.994s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov.gazebo.xacro
+[1.006s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_actuators.xacro
+[1.018s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_base.xacro
+[1.028s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_sensors.xacro
+[1.040s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/package_run_dependencies/uuv_descriptions
+[1.058s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/parent_prefix_path/uuv_descriptions
+[1.094s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/ament_prefix_path.sh
+[1.115s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/ament_prefix_path.dsv
+[1.173s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/path.sh
+[1.202s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/path.dsv
+[1.223s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.bash
+[1.271s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.sh
+[1.297s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.zsh
+[1.335s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.dsv
+[1.366s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.dsv
+[1.392s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/packages/uuv_descriptions
+[1.426s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/cmake/uuv_descriptionsConfig.cmake
+[1.453s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/cmake/uuv_descriptionsConfig-version.cmake
+[1.483s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.xml
+[1.528s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions

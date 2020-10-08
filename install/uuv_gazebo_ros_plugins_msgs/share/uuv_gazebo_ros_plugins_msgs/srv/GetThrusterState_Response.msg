@@ -1,2 +1,1 @@
-
-bool is_on
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs/rosidl_cmake/srv/GetThrusterState_Response.msg

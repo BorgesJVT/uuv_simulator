@@ -1,0 +1,183 @@
+[0.053s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs -- -j8 -l8
+[0.158s] [  1%] Built target uuv_sensor_ros_plugins_msgs__cpp
+[0.176s] [ 12%] Built target uuv_sensor_ros_plugins_msgs__rosidl_generator_c
+[0.237s] [ 24%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_c
+[0.246s] [ 37%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_cpp
+[0.247s] [ 46%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_fastrtps_cpp
+[0.248s] [ 58%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cpp
+[0.258s] [ 69%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_c
+[0.358s] [ 81%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_fastrtps_c
+[0.381s] [ 81%] Built target uuv_sensor_ros_plugins_msgs
+[0.405s] [ 82%] Built target uuv_sensor_ros_plugins_msgs__py
+[0.449s] [ 92%] Built target uuv_sensor_ros_plugins_msgs__python
+[0.507s] [ 94%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_c__pyext
+[0.521s] [ 97%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_c__pyext
+[0.521s] [100%] Built target uuv_sensor_ros_plugins_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.541s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs -- -j8 -l8
+[0.709s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs
+[0.718s] -- Install configuration: ""
+[0.719s] -- Execute custom install script
+[0.719s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/ament_index/resource_index/rosidl_interfaces/uuv_sensor_ros_plugins_msgs
+[0.720s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/chemical_particle_concentration.h
+[0.720s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__functions.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__struct.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__type_support.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__functions.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__struct.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__type_support.h
+[0.721s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__functions.h
+[0.722s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__struct.h
+[0.722s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__type_support.h
+[0.722s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__functions.h
+[0.722s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__struct.h
+[0.723s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__type_support.h
+[0.723s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__functions.h
+[0.723s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__struct.h
+[0.723s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__type_support.h
+[0.724s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__functions.h
+[0.724s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__struct.h
+[0.724s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__type_support.h
+[0.724s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/dvl.h
+[0.725s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/dvl_beam.h
+[0.725s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/position_with_covariance.h
+[0.725s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/position_with_covariance_stamped.h
+[0.725s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.725s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/salinity.h
+[0.726s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/change_sensor_state.h
+[0.726s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__functions.h
+[0.726s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__struct.h
+[0.726s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__type_support.h
+[0.727s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/library_path.sh
+[0.727s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/library_path.dsv
+[0.728s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__rosidl_typesupport_fastrtps_c.h
+[0.728s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__rosidl_typesupport_fastrtps_c.h
+[0.728s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__rosidl_typesupport_fastrtps_c.h
+[0.728s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__rosidl_typesupport_fastrtps_c.h
+[0.729s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__rosidl_typesupport_fastrtps_c.h
+[0.729s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__rosidl_typesupport_fastrtps_c.h
+[0.729s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.729s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__rosidl_typesupport_fastrtps_c.h
+[0.730s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_fastrtps_c.so
+[0.731s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__rosidl_typesupport_fastrtps_cpp.hpp
+[0.731s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__rosidl_typesupport_fastrtps_cpp.hpp
+[0.731s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__rosidl_typesupport_fastrtps_cpp.hpp
+[0.732s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__rosidl_typesupport_fastrtps_cpp.hpp
+[0.732s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[0.732s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__rosidl_typesupport_fastrtps_cpp.hpp
+[0.732s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.732s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.733s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.733s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__rosidl_typesupport_introspection_c.h
+[0.735s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.735s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__rosidl_typesupport_introspection_c.h
+[0.735s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/chemical_particle_concentration.hpp
+[0.736s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__builder.hpp
+[0.736s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__struct.hpp
+[0.736s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__traits.hpp
+[0.736s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__builder.hpp
+[0.737s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__struct.hpp
+[0.737s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__traits.hpp
+[0.737s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__builder.hpp
+[0.737s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__struct.hpp
+[0.737s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__traits.hpp
+[0.738s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__builder.hpp
+[0.738s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__struct.hpp
+[0.738s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__traits.hpp
+[0.739s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__builder.hpp
+[0.739s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__struct.hpp
+[0.739s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__traits.hpp
+[0.739s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__builder.hpp
+[0.739s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__struct.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__traits.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/dvl.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/dvl_beam.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/position_with_covariance.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/position_with_covariance_stamped.hpp
+[0.740s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/salinity.hpp
+[0.741s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/change_sensor_state.hpp
+[0.741s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__builder.hpp
+[0.741s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__struct.hpp
+[0.741s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__traits.hpp
+[0.742s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/chemical_particle_concentration__rosidl_typesupport_introspection_cpp.hpp
+[0.742s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl__rosidl_typesupport_introspection_cpp.hpp
+[0.742s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/dvl_beam__rosidl_typesupport_introspection_cpp.hpp
+[0.742s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance__rosidl_typesupport_introspection_cpp.hpp
+[0.743s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/position_with_covariance_stamped__rosidl_typesupport_introspection_cpp.hpp
+[0.743s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/msg/detail/salinity__rosidl_typesupport_introspection_cpp.hpp
+[0.743s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/include/uuv_sensor_ros_plugins_msgs/srv/detail/change_sensor_state__rosidl_typesupport_introspection_cpp.hpp
+[0.743s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/pythonpath.sh
+[0.744s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/pythonpath.dsv
+[0.744s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/__init__.py
+[0.745s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/__init__.py
+[0.745s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_chemical_particle_concentration.py
+[0.745s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_dvl.py
+[0.745s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_dvl_beam.py
+[0.746s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_position_with_covariance.py
+[0.746s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_position_with_covariance_stamped.py
+[0.746s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/msg/_salinity.py
+[0.747s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/srv/__init__.py
+[0.747s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/srv/_change_sensor_state.py
+[0.747s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/uuv_sensor_ros_plugins_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.748s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/uuv_sensor_ros_plugins_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.748s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages/uuv_sensor_ros_plugins_msgs/uuv_sensor_ros_plugins_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.749s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__python.so
+[0.749s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/DVL.idl
+[0.749s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.idl
+[0.749s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.idl
+[0.750s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.idl
+[0.750s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.idl
+[0.750s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/Salinity.idl
+[0.751s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.idl
+[0.751s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/DVL.msg
+[0.751s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/DVLBeam.msg
+[0.752s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovariance.msg
+[0.752s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/PositionWithCovarianceStamped.msg
+[0.752s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/ChemicalParticleConcentration.msg
+[0.753s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/msg/Salinity.msg
+[0.753s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState.srv
+[0.753s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState_Request.msg
+[0.753s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/srv/ChangeSensorState_Response.msg
+[0.754s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/ament_index/resource_index/package_run_dependencies/uuv_sensor_ros_plugins_msgs
+[0.754s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/ament_index/resource_index/parent_prefix_path/uuv_sensor_ros_plugins_msgs
+[0.754s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/ament_prefix_path.sh
+[0.755s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/ament_prefix_path.dsv
+[0.755s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/path.sh
+[0.755s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/environment/path.dsv
+[0.755s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/local_setup.bash
+[0.756s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/local_setup.sh
+[0.756s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/local_setup.zsh
+[0.756s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/local_setup.dsv
+[0.756s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.dsv
+[0.766s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/ament_index/resource_index/packages/uuv_sensor_ros_plugins_msgs
+[0.766s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/rosidl_cmake-extras.cmake
+[0.767s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.767s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.767s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.768s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.768s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.768s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.769s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgsConfig.cmake
+[0.769s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgsConfig-version.cmake
+[0.769s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.xml
+[0.770s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_generator_c.so
+[0.770s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_c.so
+[0.771s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_c.so
+[0.772s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cpp.so
+[0.773s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/libuuv_sensor_ros_plugins_msgs__rosidl_typesupport_cpp.so
+[0.812s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_generator_cExport.cmake
+[0.812s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.812s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.812s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.815s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_cExport.cmake
+[0.815s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.816s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_generator_cppExport.cmake
+[0.816s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.816s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.816s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_cppExport.cmake
+[0.816s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/cmake/uuv_sensor_ros_plugins_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.817s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs

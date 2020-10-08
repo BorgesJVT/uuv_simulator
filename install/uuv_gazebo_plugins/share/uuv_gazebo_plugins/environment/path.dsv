@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins/ament_cmake_environment_hooks/path.dsv

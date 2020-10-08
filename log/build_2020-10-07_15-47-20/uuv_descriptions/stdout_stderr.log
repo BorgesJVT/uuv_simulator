@@ -1,0 +1,40 @@
+-- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/launch/upload_rexrov.launch.py
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.dae
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.stl
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/collision.blend
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_default.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_default_noisy_pose.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon4.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon7.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_oberon_arms.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/robots/rexrov_sonar.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/common.urdf.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov.gazebo.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_actuators.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_base.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/urdf/rexrov_sensors.xacro
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/package_run_dependencies/uuv_descriptions
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/parent_prefix_path/uuv_descriptions
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/ament_prefix_path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/ament_prefix_path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/environment/path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.bash
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.zsh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/local_setup.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/ament_index/resource_index/packages/uuv_descriptions
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/cmake/uuv_descriptionsConfig.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/cmake/uuv_descriptionsConfig-version.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.xml

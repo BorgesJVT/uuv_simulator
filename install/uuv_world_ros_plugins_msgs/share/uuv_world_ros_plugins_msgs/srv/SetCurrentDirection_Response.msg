@@ -1,2 +1,1 @@
-
-bool success
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_cmake/srv/SetCurrentDirection_Response.msg

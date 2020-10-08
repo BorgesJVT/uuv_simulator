@@ -1,0 +1,84 @@
+[0.017s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins -- -j8 -l8
+[0.077s] [ 38%] Built target uuv_gazebo_plugins_msgs
+[0.080s] [ 53%] Built target uuv_dynamics
+[0.085s] [ 76%] Built target uuv_underwater_object_plugin
+[0.120s] [100%] Built target uuv_thruster_plugin
+[0.129s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins -- -j8 -l8
+[0.161s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins
+[0.168s] -- Install configuration: ""
+[0.168s] -- Execute custom install script
+[0.169s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/library_path.sh
+[0.169s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/library_path.dsv
+[0.169s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/uuv_gazebo_plugins
+[0.170s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/uuv_gazebo_plugins
+[0.170s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/ament_prefix_path.sh
+[0.170s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/ament_prefix_path.dsv
+[0.170s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/path.sh
+[0.170s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/path.dsv
+[0.171s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.bash
+[0.171s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.sh
+[0.171s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.zsh
+[0.171s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.dsv
+[0.171s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.dsv
+[0.179s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/packages/uuv_gazebo_plugins
+[0.179s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[0.179s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.179s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.179s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/uuv_gazebo_pluginsConfig.cmake
+[0.180s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/uuv_gazebo_pluginsConfig-version.cmake
+[0.180s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.xml
+[0.180s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_gazebo_plugins_msgs.so
+[0.180s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_dynamics.so
+[0.181s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_underwater_object_plugin.a
+[0.181s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_thruster_plugin.so
+[0.181s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins/
+[0.181s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//HydrodynamicModel.hh
+[0.181s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//Def.hh
+[0.181s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//BuoyantObject.hh
+[0.181s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//ThrusterConversionFcn.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//FinPlugin.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//UmbilicalModel.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//Dynamics.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//LiftDragModel.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//UmbilicalPlugin.hh
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_dependencies
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_core
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_core/stamps
+[0.182s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_libraries
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Accel.pb.h
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_include_directories
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_package_templates
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_underwater_object_plugin.dir
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_underwater_object_plugin.dir/src
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdC
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdC/tmp
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdCXX
+[0.183s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdCXX/tmp
+[0.185s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uninstall.dir
+[0.185s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_thruster_plugin.dir
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_thruster_plugin.dir/src
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_dynamics.dir
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_dynamics.dir/src
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_uninstall.dir
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir/Double.pb.cc.o
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir/Accel.pb.cc.o
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/CMakeTmp
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_environment_hooks
+[0.186s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Double.pb.h
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//msgs
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Accel.pb.cc
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_uninstall_target
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_symlink_install
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Double.pb.cc
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/package_run_dependencies
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/parent_prefix_path
+[0.187s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/packages
+[0.188s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins

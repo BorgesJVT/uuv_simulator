@@ -1,0 +1,25 @@
+-- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rbim_description: 0.0.1 (/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/launch/rbim_simulation.launch.py
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/package_run_dependencies/rbim_simulation
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/parent_prefix_path/rbim_simulation
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/ament_prefix_path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/environment/path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.bash
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.zsh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/local_setup.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/ament_index/resource_index/packages/rbim_simulation
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/cmake/rbim_simulationConfig.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/cmake/rbim_simulationConfig-version.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.xml

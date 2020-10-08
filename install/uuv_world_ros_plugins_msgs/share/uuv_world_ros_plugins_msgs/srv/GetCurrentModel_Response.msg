@@ -1,6 +1,1 @@
-
-float64 mean
-float64 min
-float64 max
-float64 noise
-float64 mu
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs/rosidl_cmake/srv/GetCurrentModel_Response.msg

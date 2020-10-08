@@ -1,0 +1,51 @@
+[0.045s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[0.132s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[0.311s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world
+[0.363s] -- Install configuration: ""
+[0.365s] -- Execute custom install script
+[0.370s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/chiton_world.launch.py
+[0.371s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso.launch
+[0.376s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso_simulation.launch
+[0.376s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/fpso_simulation.launch.py
+[0.380s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/rbim_simulator.launch
+[0.382s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/rbim_world.launch
+[0.384s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/launch/sup_ship.launch
+[0.385s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world.world
+[0.388s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world_fpso_and_sup.world
+[0.388s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/worlds/rbim_world_sup.world
+[0.389s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/meshes/base_link.STL
+[0.395s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/model.config
+[0.395s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/model.sdf
+[0.395s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/textures/fpso_rbim.mtl
+[0.396s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/textures/fpso_rbim.obj
+[0.398s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/urdf/fpso_rbim.csv
+[0.404s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/fpso_rbim/urdf/fpso_rbim.urdf
+[0.408s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/meshes/seabed.stl
+[0.408s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/model.config
+[0.409s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/rbim_seabed/model.sdf
+[0.409s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/meshes/seabed.stl
+[0.412s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/model.config
+[0.413s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/seabed/model.sdf
+[0.415s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/config/support.yaml
+[0.418s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/manifest.xml
+[0.418s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/meshes/suport_ship.STL
+[0.419s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/model.config
+[0.423s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/model.sdf
+[0.424s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/urdf/fpso.urdf
+[0.426s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/models/sup_ship/urdf/suport_ship.urdf
+[0.426s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/package_run_dependencies/rbim_world
+[0.427s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/parent_prefix_path/rbim_world
+[0.429s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/ament_prefix_path.sh
+[0.430s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/ament_prefix_path.dsv
+[0.436s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/path.sh
+[0.440s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/environment/path.dsv
+[0.445s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.bash
+[0.453s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.sh
+[0.455s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.zsh
+[0.458s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/local_setup.dsv
+[0.458s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.dsv
+[0.479s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/ament_index/resource_index/packages/rbim_world
+[0.480s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/cmake/rbim_worldConfig.cmake
+[0.480s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/cmake/rbim_worldConfig-version.cmake
+[0.481s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.xml
+[0.512s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world

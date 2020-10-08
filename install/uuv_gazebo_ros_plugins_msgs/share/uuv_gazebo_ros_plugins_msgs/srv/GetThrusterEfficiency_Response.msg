@@ -1,2 +1,1 @@
-
-float64 efficiency
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs/rosidl_cmake/srv/GetThrusterEfficiency_Response.msg

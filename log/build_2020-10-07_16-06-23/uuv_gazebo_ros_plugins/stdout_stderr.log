@@ -1,0 +1,31 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/ament_index/resource_index/package_run_dependencies/uuv_gazebo_ros_plugins
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/ament_index/resource_index/parent_prefix_path/uuv_gazebo_ros_plugins
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/environment/path.sh
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/environment/path.dsv
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/local_setup.bash
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/local_setup.sh
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/local_setup.zsh
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/local_setup.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.dsv
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/ament_index/resource_index/packages/uuv_gazebo_ros_plugins
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/cmake/uuv_gazebo_ros_pluginsConfig.cmake
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/cmake/uuv_gazebo_ros_pluginsConfig-version.cmake
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.xml
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins//urdf/battery_snippets.xacro
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins//urdf/fin_snippets.xacro
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins//urdf/misc.xacro
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins//urdf/snippets.xacro
+-- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins//urdf/thruster_snippets.xacro
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/FinROSPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/UnderwaterObjectROSPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/CustomBatteryConsumerROSPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/LinearBatteryROSPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/AccelerationsTestPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/JointStatePublisher.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/ThrusterROSPlugin.hh

@@ -1,0 +1,159 @@
+-- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+-- Looking for ignition-math6 -- found version 6.4.0
+-- Searching for dependencies of ignition-math6
+-- Looking for OGRE...
+-- Found Ogre Ghadamon (1.9.0)
+-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+-- Looking for OGRE_Paging...
+-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+-- Looking for OGRE_Terrain...
+-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+-- Looking for OGRE_Property...
+-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+-- Looking for OGRE_RTShaderSystem...
+-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+-- Looking for OGRE_Volume...
+-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+-- Looking for OGRE_Overlay...
+-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+-- Looking for ignition-math6 -- found version 6.4.0
+-- Looking for ignition-transport8 -- found version 8.1.0
+-- Searching for dependencies of ignition-transport8
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found suitable version "3.6.1", minimum required is "3") 
+-- Config-file not installed for ZeroMQ -- checking for pkg-config
+-- Checking for module 'libzmq >= 4'
+--   Found libzmq , version 4.3.2
+-- Checking for module 'uuid'
+--   Found uuid, version 2.34.0
+-- Looking for ignition-msgs5 -- found version 5.3.0
+-- Searching for dependencies of ignition-msgs5
+-- Looking for ignition-math6 -- found version 6.4.0
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 6.2.0
+-- Looking for ignition-msgs5 -- found version 5.3.0
+-- Looking for ignition-common3 -- found version 3.6.0
+-- Searching for dependencies of ignition-common3
+-- Looking for dlfcn.h - found
+-- Looking for libdl - found
+-- Searching for <ignition-common3> component [graphics]
+-- Looking for ignition-common3-graphics -- found version 3.6.0
+-- Searching for dependencies of ignition-common3-graphics
+-- Looking for ignition-math6 -- found version 6.4.0
+-- Looking for ignition-fuel_tools4 -- found version 4.2.1
+-- Searching for dependencies of ignition-fuel_tools4
+-- Checking for module 'jsoncpp'
+--   Found jsoncpp, version 1.7.4
+-- Checking for module 'libzip'
+--   Found libzip, version 1.5.1
+-- Looking for ignition-common3 -- found version 3.6.0
+-- Looking for ignition-msgs5 -- found version 5.3.0
+-- Found gazebo_dev: 3.5.0 (/opt/ros/foxy/share/gazebo_dev/cmake)
+-- Gazebo version: 11.1
+-- Found gazebo_ros: 3.5.0 (/opt/ros/foxy/share/gazebo_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.1 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found gazebo_msgs: 3.5.0 (/opt/ros/foxy/share/gazebo_msgs/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.6.1") 
+-- Looking for ignition-common3 -- found version 3.6.0
+-- Found uuv_gazebo_ros_plugins_msgs: 0.0.1 (/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake)
+-- PROTOBUF_IMPORT_DIRS = /usr/include/gazebo-11/gazebo/msgs/proto
+-- GAZEBO_MSG_INCLUDE_DIRS = /usr/include/gazebo-11/gazebo/msgs
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins
+[35m[1mScanning dependencies of target uuv_gazebo_plugins_msgs[0m
+[  7%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_plugins_msgs.dir/Double.pb.cc.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/uuv_gazebo_plugins_msgs.dir/Accel.pb.cc.o[0m
+[ 23%] [32m[1mLinking CXX shared library libuuv_dynamics.so[0m
+[ 46%] Built target uuv_underwater_object_plugin
+[ 53%] Built target uuv_dynamics
+[ 61%] [32m[1mLinking CXX shared library libuuv_gazebo_plugins_msgs.so[0m
+[ 76%] Built target uuv_gazebo_plugins_msgs
+[35m[1mScanning dependencies of target uuv_thruster_plugin[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/uuv_thruster_plugin.dir/src/ThrusterPlugin.cpp.o[0m
+[ 92%] [32m[1mLinking CXX shared library libuuv_thruster_plugin.so[0m
+[100%] Built target uuv_thruster_plugin
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/library_path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/library_path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/uuv_gazebo_plugins
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/uuv_gazebo_plugins
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/ament_prefix_path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/ament_prefix_path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/path.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/environment/path.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.bash
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.sh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.zsh
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/local_setup.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.dsv
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/ament_index/resource_index/packages/uuv_gazebo_plugins
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/uuv_gazebo_pluginsConfig.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/cmake/uuv_gazebo_pluginsConfig-version.cmake
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.xml
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_gazebo_plugins_msgs.so
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_dynamics.so
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_underwater_object_plugin.a
+-- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/libuuv_thruster_plugin.so
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins/
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//HydrodynamicModel.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//Def.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//BuoyantObject.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//ThrusterConversionFcn.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//FinPlugin.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//UmbilicalModel.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//Dynamics.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//LiftDragModel.hh
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/uuv_gazebo_plugins//UmbilicalPlugin.hh
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include/
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_dependencies
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_core
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_core/stamps
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_libraries
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Accel.pb.h
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_export_include_directories
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_package_templates
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_underwater_object_plugin.dir
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_underwater_object_plugin.dir/src
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdC
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdC/tmp
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdCXX
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/3.16.3/CompilerIdCXX/tmp
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uninstall.dir
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_thruster_plugin.dir
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_thruster_plugin.dir/src
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_dynamics.dir
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_dynamics.dir/src
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_uninstall.dir
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir/Double.pb.cc.o
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/uuv_gazebo_plugins_msgs.dir/Accel.pb.cc.o
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//CMakeFiles/CMakeTmp
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_environment_hooks
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Double.pb.h
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//msgs
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Accel.pb.cc
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_uninstall_target
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_symlink_install
+-- Installing: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//Double.pb.cc
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/package_run_dependencies
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/parent_prefix_path
+-- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/include//ament_cmake_index/share/ament_index/resource_index/packages

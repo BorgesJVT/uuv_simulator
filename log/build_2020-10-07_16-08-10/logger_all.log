@@ -1,0 +1,885 @@
+[0.127s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.127s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd6d3ff7eb0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd6d3ff7eb0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd6d4003460>)
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.132s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/brenda/RBIM_ws/src/uuv_simulator'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_description) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'rbim_description' with type 'ros.ament_cmake' and name 'rbim_description'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_simulation) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'rbim_simulation' with type 'ros.ament_cmake' and name 'rbim_simulation'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(rbim_world) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'rbim_world' with type 'ros.ament_cmake' and name 'rbim_world'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_descriptions) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_descriptions' with type 'ros.ament_cmake' and name 'uuv_descriptions'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_plugins) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_gazebo_plugins' with type 'ros.ament_cmake' and name 'uuv_gazebo_plugins'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_gazebo_ros_plugins' with type 'ros.ament_cmake' and name 'uuv_gazebo_ros_plugins'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_ros_plugins_msgs) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_gazebo_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_gazebo_ros_plugins_msgs'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_gazebo_worlds) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_gazebo_worlds' with type 'ros.ament_cmake' and name 'uuv_gazebo_worlds'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_sensor_ros_plugins_msgs'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_sensor_ros_plugins) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_sensor_ros_plugins' with type 'ros.ament_cmake' and name 'uuv_sensor_ros_plugins'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_plugins) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_world_plugins/uuv_world_plugins' with type 'ros.catkin' and name 'uuv_world_plugins'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(uuv_world_plugins/uuv_world_ros_plugins_msgs) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'uuv_world_plugins/uuv_world_ros_plugins_msgs' with type 'ros.ament_cmake' and name 'uuv_world_ros_plugins_msgs'
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_target' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.177s] Level 5:colcon.colcon_core.verb:set package 'rbim_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.177s] DEBUG:colcon.colcon_core.verb:Building package 'rbim_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_description', 'symlink_install': True, 'test_result_base': None}
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_target' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'rbim_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.179s] DEBUG:colcon.colcon_core.verb:Building package 'rbim_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world', 'symlink_install': True, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'uuv_descriptions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_descriptions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_descriptions', 'symlink_install': True, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_worlds' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_worlds' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_worlds', 'symlink_install': True, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_sensor_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_target' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.191s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_ros_plugins_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.191s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_world_ros_plugins_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'rbim_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'rbim_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_simulation', 'symlink_install': True, 'test_result_base': None}
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_target' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.195s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.195s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_plugins', 'symlink_install': True, 'test_result_base': None}
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'uuv_world_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_world_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins', 'symlink_install': True, 'test_result_base': None}
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_target' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'uuv_gazebo_ros_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.200s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_gazebo_ros_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins', 'symlink_install': True, 'test_result_base': None}
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'uuv_sensor_ros_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'uuv_sensor_ros_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins', 'merge_install': False, 'path': '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_ros_plugins', 'symlink_install': True, 'test_result_base': None}
+[0.202s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.204s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.205s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins_msgs' with build type 'ament_cmake'
+[0.205s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins_msgs'
+[0.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.211s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.213s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_description' with build type 'ament_cmake'
+[0.214s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_description'
+[0.215s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.217s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.220s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs' with build type 'ament_cmake'
+[0.220s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_plugins/uuv_sensor_ros_plugins_msgs'
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.222s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.224s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.226s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins_msgs' with build type 'ament_cmake'
+[0.226s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins_msgs'
+[0.228s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.228s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.234s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world' with build type 'ament_cmake'
+[0.235s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world'
+[0.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.239s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.241s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_descriptions' with build type 'ament_cmake'
+[0.241s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_descriptions'
+[0.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.242s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.245s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.248s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_worlds' with build type 'ament_cmake'
+[0.248s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_worlds'
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.251s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.259s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs -- -j8 -l8
+[0.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description -- -j8 -l8
+[0.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs -- -j8 -l8
+[0.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs -- -j8 -l8
+[0.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[0.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions -- -j8 -l8
+[0.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds -- -j8 -l8
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description -- -j8 -l8
+[0.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world -- -j8 -l8
+[0.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions -- -j8 -l8
+[0.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds -- -j8 -l8
+[0.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world
+[0.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions
+[0.553s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_description)
+[0.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds
+[0.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_description
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description' for CMake module files
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description' for CMake config files
+[0.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_description', 'cmake_prefix_path')
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.ps1'
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.dsv'
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.sh'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/bin'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/lib/pkgconfig/rbim_description.pc'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/lib/python3.8/site-packages'
+[0.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.dsv'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.sh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.bash'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.zsh'
+[0.577s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/colcon-core/packages/rbim_description)
+[0.587s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_world)
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world' for CMake module files
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world' for CMake config files
+[0.594s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_world', 'cmake_prefix_path')
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.ps1'
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/bin'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/lib/pkgconfig/rbim_world.pc'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/lib/python3.8/site-packages'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.ps1'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.dsv'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.sh'
+[0.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.bash'
+[0.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.zsh'
+[0.603s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/colcon-core/packages/rbim_world)
+[0.609s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_descriptions)
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions' for CMake module files
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions' for CMake config files
+[0.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_descriptions', 'cmake_prefix_path')
+[0.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.dsv'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.sh'
+[0.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/bin'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/lib/pkgconfig/uuv_descriptions.pc'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/lib/python3.8/site-packages'
+[0.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.ps1'
+[0.621s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.dsv'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.sh'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.bash'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.zsh'
+[0.624s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/colcon-core/packages/uuv_descriptions)
+[0.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_descriptions
+[0.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_worlds)
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds' for CMake module files
+[0.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_worlds
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds' for CMake config files
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_worlds', 'cmake_prefix_path')
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.sh'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/bin'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/lib/pkgconfig/uuv_gazebo_worlds.pc'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/lib/python3.8/site-packages'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.ps1'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.dsv'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.sh'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.bash'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.zsh'
+[0.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/colcon-core/packages/uuv_gazebo_worlds)
+[0.654s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_description)
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description' for CMake module files
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description' for CMake config files
+[0.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_description', 'cmake_prefix_path')
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.ps1'
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.dsv'
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/hook/cmake_prefix_path.sh'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/bin'
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/lib/pkgconfig/rbim_description.pc'
+[0.659s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/lib/python3.8/site-packages'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.ps1'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.dsv'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.sh'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.bash'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/rbim_description/package.zsh'
+[0.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description/share/colcon-core/packages/rbim_description)
+[0.664s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_simulation' with build type 'ament_cmake'
+[0.664s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/rbim_simulation'
+[0.665s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.665s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.669s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_descriptions)
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions' for CMake module files
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions' for CMake config files
+[0.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_descriptions', 'cmake_prefix_path')
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/hook/cmake_prefix_path.sh'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/bin'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/lib/pkgconfig/uuv_descriptions.pc'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/lib/python3.8/site-packages'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.ps1'
+[0.697s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.dsv'
+[0.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.sh'
+[0.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.bash'
+[0.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/uuv_descriptions/package.zsh'
+[0.700s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_descriptions/share/colcon-core/packages/uuv_descriptions)
+[0.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_world)
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world' for CMake module files
+[0.703s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world' for CMake config files
+[0.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_world', 'cmake_prefix_path')
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.ps1'
+[0.704s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.dsv'
+[0.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/hook/cmake_prefix_path.sh'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/bin'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/lib/pkgconfig/rbim_world.pc'
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/lib/python3.8/site-packages'
+[0.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.dsv'
+[0.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.sh'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.bash'
+[0.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/rbim_world/package.zsh'
+[0.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_world/share/colcon-core/packages/rbim_world)
+[0.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_worlds)
+[0.714s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds' for CMake module files
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds' for CMake config files
+[0.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_worlds', 'cmake_prefix_path')
+[0.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.ps1'
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.dsv'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/hook/cmake_prefix_path.sh'
+[0.718s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/bin'
+[0.718s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/lib/pkgconfig/uuv_gazebo_worlds.pc'
+[0.719s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/lib/python3.8/site-packages'
+[0.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.ps1'
+[0.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.dsv'
+[0.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.sh'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.bash'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/uuv_gazebo_worlds/package.zsh'
+[0.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_worlds/share/colcon-core/packages/uuv_gazebo_worlds)
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation -- -j8 -l8
+[0.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs -- -j8 -l8
+[0.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs -- -j8 -l8
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs -- -j8 -l8
+[0.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation -- -j8 -l8
+[0.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_simulation)
+[0.837s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation' for CMake module files
+[0.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_description:/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_simulation
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation' for CMake config files
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_simulation', 'cmake_prefix_path')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.sh'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/bin'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/lib/pkgconfig/rbim_simulation.pc'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/lib/python3.8/site-packages'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.sh'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/colcon-core/packages/rbim_simulation)
+[0.870s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbim_simulation)
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation' for CMake module files
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation' for CMake config files
+[0.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbim_simulation', 'cmake_prefix_path')
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.ps1'
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.dsv'
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/hook/cmake_prefix_path.sh'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/bin'
+[0.873s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/lib/pkgconfig/rbim_simulation.pc'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/lib/python3.8/site-packages'
+[0.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.ps1'
+[0.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.dsv'
+[0.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.sh'
+[0.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.bash'
+[0.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/rbim_simulation/package.zsh'
+[0.877s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/rbim_simulation/share/colcon-core/packages/rbim_simulation)
+[0.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs
+[1.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs
+[1.041s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_sensor_ros_plugins_msgs)
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs' for CMake module files
+[1.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins_msgs
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs' for CMake config files
+[1.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'cmake_prefix_path')
+[1.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.047s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib'
+[1.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'ld_library_path_lib')
+[1.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/bin'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/pkgconfig/uuv_sensor_ros_plugins_msgs.pc'
+[1.049s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'pythonpath')
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.sh'
+[1.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.dsv'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.sh'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.bash'
+[1.057s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.zsh'
+[1.058s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/colcon-core/packages/uuv_sensor_ros_plugins_msgs)
+[1.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_world_ros_plugins_msgs)
+[1.074s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs' for CMake module files
+[1.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_ros_plugins_msgs
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs' for CMake config files
+[1.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'cmake_prefix_path')
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib'
+[1.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'ld_library_path_lib')
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/bin'
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/pkgconfig/uuv_world_ros_plugins_msgs.pc'
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'pythonpath')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.sh'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.ps1'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.dsv'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.sh'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.bash'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.zsh'
+[1.100s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/colcon-core/packages/uuv_world_ros_plugins_msgs)
+[1.176s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_ros_plugins_msgs)
+[1.177s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs' for CMake module files
+[1.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs' for CMake config files
+[1.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'cmake_prefix_path')
+[1.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.181s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib'
+[1.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'ld_library_path_lib')
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/bin'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/pkgconfig/uuv_gazebo_ros_plugins_msgs.pc'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.184s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'pythonpath')
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.sh'
+[1.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.ps1'
+[1.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.dsv'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.sh'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.bash'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.zsh'
+[1.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/colcon-core/packages/uuv_gazebo_ros_plugins_msgs)
+[1.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_sensor_ros_plugins_msgs)
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs' for CMake module files
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs' for CMake config files
+[1.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'cmake_prefix_path')
+[1.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib'
+[1.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'ld_library_path_lib')
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/bin'
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/pkgconfig/uuv_sensor_ros_plugins_msgs.pc'
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins_msgs', 'pythonpath')
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/hook/pythonpath.sh'
+[1.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.ps1'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.dsv'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.sh'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.bash'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/uuv_sensor_ros_plugins_msgs/package.zsh'
+[1.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/share/colcon-core/packages/uuv_sensor_ros_plugins_msgs)
+[1.253s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_world_ros_plugins_msgs)
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs' for CMake module files
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs' for CMake config files
+[1.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'cmake_prefix_path')
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib'
+[1.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'ld_library_path_lib')
+[1.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/bin'
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/pkgconfig/uuv_world_ros_plugins_msgs.pc'
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_ros_plugins_msgs', 'pythonpath')
+[1.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/hook/pythonpath.sh'
+[1.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.ps1'
+[1.266s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.dsv'
+[1.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.sh'
+[1.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.bash'
+[1.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/uuv_world_ros_plugins_msgs/package.zsh'
+[1.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/share/colcon-core/packages/uuv_world_ros_plugins_msgs)
+[1.269s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins' with build type 'catkin'
+[1.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_plugins'
+[1.270s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.270s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.274s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins -- -j8 -l8
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins -- -j8 -l8
+[1.383s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_ros_plugins_msgs)
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs' for CMake module files
+[1.384s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs' for CMake config files
+[1.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'cmake_prefix_path')
+[1.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.ps1'
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.dsv'
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/cmake_prefix_path.sh'
+[1.388s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib'
+[1.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'ld_library_path_lib')
+[1.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.ps1'
+[1.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.dsv'
+[1.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/ld_library_path_lib.sh'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/bin'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/pkgconfig/uuv_gazebo_ros_plugins_msgs.pc'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages'
+[1.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins_msgs', 'pythonpath')
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.ps1'
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.dsv'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/hook/pythonpath.sh'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.ps1'
+[1.392s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.dsv'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.sh'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.bash'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.zsh'
+[1.394s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/colcon-core/packages/uuv_gazebo_ros_plugins_msgs)
+[1.395s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_plugins' with build type 'ament_cmake'
+[1.395s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_plugins'
+[1.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.398s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins -- -j8 -l8
+[1.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins
+[1.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_world_plugins
+[1.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_plugins', 'ros_package_path')
+[1.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ros_package_path.ps1'
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ros_package_path.dsv'
+[1.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ros_package_path.sh'
+[1.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_plugins', 'pkg_config_path')
+[1.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path.ps1'
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path.dsv'
+[1.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path.sh'
+[1.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_plugins', 'pkg_config_path_multiarch')
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path_multiarch.ps1'
+[1.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path_multiarch.dsv'
+[1.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/pkg_config_path_multiarch.sh'
+[1.503s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_world_plugins)
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins' for CMake module files
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins' for CMake config files
+[1.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_plugins', 'cmake_prefix_path')
+[1.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/cmake_prefix_path.ps1'
+[1.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/cmake_prefix_path.dsv'
+[1.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/cmake_prefix_path.sh'
+[1.506s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/lib'
+[1.506s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_world_plugins', 'ld_library_path_lib')
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ld_library_path_lib.ps1'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ld_library_path_lib.dsv'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/hook/ld_library_path_lib.sh'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/bin'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/lib/pkgconfig/uuv_world_plugins.pc'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/lib/python3.8/site-packages'
+[1.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/package.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/package.dsv'
+[1.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/package.sh'
+[1.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/package.bash'
+[1.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/uuv_world_plugins/package.zsh'
+[1.511s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_world_plugins/share/colcon-core/packages/uuv_world_plugins)
+[1.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins -- -j8 -l8
+[1.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins
+[1.607s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_plugins)
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins' for CMake module files
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins' for CMake config files
+[1.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_plugins
+[1.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_plugins', 'cmake_prefix_path')
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.ps1'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.dsv'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.sh'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib'
+[1.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_plugins', 'ld_library_path_lib')
+[1.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.ps1'
+[1.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.dsv'
+[1.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.sh'
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/bin'
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/pkgconfig/uuv_gazebo_plugins.pc'
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/python3.8/site-packages'
+[1.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.ps1'
+[1.620s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.dsv'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.sh'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.bash'
+[1.622s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.zsh'
+[1.622s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/colcon-core/packages/uuv_gazebo_plugins)
+[1.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_plugins)
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins' for CMake module files
+[1.660s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins' for CMake config files
+[1.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_plugins', 'cmake_prefix_path')
+[1.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.ps1'
+[1.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.dsv'
+[1.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/cmake_prefix_path.sh'
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib'
+[1.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_plugins', 'ld_library_path_lib')
+[1.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.ps1'
+[1.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.dsv'
+[1.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/hook/ld_library_path_lib.sh'
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/bin'
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/pkgconfig/uuv_gazebo_plugins.pc'
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib/python3.8/site-packages'
+[1.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.ps1'
+[1.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.dsv'
+[1.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.sh'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.bash'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/uuv_gazebo_plugins/package.zsh'
+[1.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/share/colcon-core/packages/uuv_gazebo_plugins)
+[1.671s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins' with build type 'ament_cmake'
+[1.671s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_gazebo_ros_plugins'
+[1.672s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.672s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.676s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.679s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_ros_plugins' with build type 'ament_cmake'
+[1.679s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/brenda/RBIM_ws/src/uuv_simulator/uuv_sensor_ros_plugins'
+[1.680s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.683s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[1.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins -- -j8 -l8
+[1.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins -- -j8 -l8
+[1.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins -- -j8 -l8
+[1.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins -- -j8 -l8
+[1.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins
+[1.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins
+[1.789s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_ros_plugins)
+[1.790s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins' for CMake module files
+[1.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins
+[1.791s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins' for CMake config files
+[1.791s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins', 'cmake_prefix_path')
+[1.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.ps1'
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.dsv'
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.sh'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/bin'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/pkgconfig/uuv_gazebo_ros_plugins.pc'
+[1.794s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/python3.8/site-packages'
+[1.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.ps1'
+[1.796s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.dsv'
+[1.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.sh'
+[1.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.bash'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.zsh'
+[1.799s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/colcon-core/packages/uuv_gazebo_ros_plugins)
+[1.807s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_sensor_ros_plugins)
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins' for CMake module files
+[1.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins' returned '0': AMENT_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs:/opt/ros/foxy:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_plugins/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins_msgs/lib/python3.8/site-packages:/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_sensor_ros_plugins
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins' for CMake config files
+[1.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins', 'cmake_prefix_path')
+[1.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.ps1'
+[1.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.dsv'
+[1.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.sh'
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/bin'
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/lib/pkgconfig/uuv_sensor_ros_plugins.pc'
+[1.811s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/lib/python3.8/site-packages'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.ps1'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.dsv'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.sh'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.bash'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.zsh'
+[1.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/colcon-core/packages/uuv_sensor_ros_plugins)
+[1.821s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_gazebo_ros_plugins)
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins' for CMake module files
+[1.823s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins' for CMake config files
+[1.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_gazebo_ros_plugins', 'cmake_prefix_path')
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.ps1'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.dsv'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/hook/cmake_prefix_path.sh'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/bin'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/pkgconfig/uuv_gazebo_ros_plugins.pc'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/lib/python3.8/site-packages'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.ps1'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.dsv'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.sh'
+[1.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.bash'
+[1.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/uuv_gazebo_ros_plugins/package.zsh'
+[1.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins/share/colcon-core/packages/uuv_gazebo_ros_plugins)
+[1.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(uuv_sensor_ros_plugins)
+[1.837s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins' for CMake module files
+[1.837s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins' for CMake config files
+[1.837s] Level 1:colcon.colcon_core.shell:create_environment_hook('uuv_sensor_ros_plugins', 'cmake_prefix_path')
+[1.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.ps1'
+[1.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.dsv'
+[1.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/hook/cmake_prefix_path.sh'
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/bin'
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/lib/pkgconfig/uuv_sensor_ros_plugins.pc'
+[1.839s] Level 1:colcon.colcon_core.environment:checking '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/lib/python3.8/site-packages'
+[1.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.ps1'
+[1.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.dsv'
+[1.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.sh'
+[1.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.bash'
+[1.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/uuv_sensor_ros_plugins/package.zsh'
+[1.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_sensor_ros_plugins/share/colcon-core/packages/uuv_sensor_ros_plugins)
+[1.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.842s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.843s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.848s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.848s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.848s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.860s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.861s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brenda/RBIM_ws/src/uuv_simulator/install/local_setup.ps1'
+[1.862s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/brenda/RBIM_ws/src/uuv_simulator/install/_local_setup_util_ps1.py'
+[1.864s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brenda/RBIM_ws/src/uuv_simulator/install/setup.ps1'
+[1.867s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brenda/RBIM_ws/src/uuv_simulator/install/local_setup.sh'
+[1.868s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/brenda/RBIM_ws/src/uuv_simulator/install/_local_setup_util_sh.py'
+[1.870s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brenda/RBIM_ws/src/uuv_simulator/install/setup.sh'
+[1.873s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brenda/RBIM_ws/src/uuv_simulator/install/local_setup.bash'
+[1.873s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brenda/RBIM_ws/src/uuv_simulator/install/setup.bash'
+[1.876s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/brenda/RBIM_ws/src/uuv_simulator/install/local_setup.zsh'
+[1.876s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/brenda/RBIM_ws/src/uuv_simulator/install/setup.zsh'

@@ -1,9 +1,1 @@
-<?xml version="1.0" ?>
-<model>
-  <name>support_ship</name>
-    <version>1.0</version>
-    <sdf version="1.5">model.sdf</sdf>
-    <author>
-    </author>
-    <description>A simple sea bottom</description>
-</model>
+/home/brenda/RBIM_ws/src/uuv_simulator/rbim_world/models/sup_ship/config/support.yaml

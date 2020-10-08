@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs/ament_cmake_environment_hooks/library_path.dsv

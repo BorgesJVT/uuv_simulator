@@ -1,2 +1,1 @@
-source;share/rbim_world/environment/ament_prefix_path.sh
-source;share/rbim_world/environment/path.sh
+/home/brenda/RBIM_ws/src/uuv_simulator/build/rbim_world/ament_cmake_environment_hooks/local_setup.dsv

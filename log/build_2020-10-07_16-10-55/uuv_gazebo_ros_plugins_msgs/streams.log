@@ -1,0 +1,291 @@
+[0.047s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs -- -j8 -l8
+[0.149s] [  0%] Built target uuv_gazebo_ros_plugins_msgs__cpp
+[0.160s] [ 12%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_generator_c
+[0.228s] [ 24%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cpp
+[0.234s] [ 36%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cpp
+[0.261s] [ 48%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_c
+[0.268s] [ 60%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_fastrtps_cpp
+[0.299s] [ 72%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_c
+[0.454s] [ 84%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_fastrtps_c
+[0.510s] [ 84%] Built target uuv_gazebo_ros_plugins_msgs
+[0.540s] [ 85%] Built target uuv_gazebo_ros_plugins_msgs__py
+[0.751s] [ 96%] Built target uuv_gazebo_ros_plugins_msgs__python
+[0.912s] [ 98%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_c__pyext
+[0.923s] [ 99%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_c__pyext
+[0.925s] [100%] Built target uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.980s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs -- -j8 -l8
+[1.415s] Invoking command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs
+[1.430s] -- Install configuration: ""
+[1.432s] -- Execute custom install script
+[1.432s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/ament_index/resource_index/rosidl_interfaces/uuv_gazebo_ros_plugins_msgs
+[1.434s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__functions.h
+[1.434s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__struct.h
+[1.434s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__type_support.h
+[1.435s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__functions.h
+[1.435s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__struct.h
+[1.435s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__type_support.h
+[1.436s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__functions.h
+[1.436s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__struct.h
+[1.436s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__type_support.h
+[1.437s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/float_stamped.h
+[1.437s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.437s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/thruster_conversion_fcn.h
+[1.437s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/underwater_object_model.h
+[1.438s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__functions.h
+[1.438s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__struct.h
+[1.438s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__type_support.h
+[1.439s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__functions.h
+[1.439s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__struct.h
+[1.439s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__type_support.h
+[1.439s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__functions.h
+[1.440s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__struct.h
+[1.440s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__type_support.h
+[1.440s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__functions.h
+[1.441s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__struct.h
+[1.441s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__type_support.h
+[1.441s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__functions.h
+[1.441s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__struct.h
+[1.442s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__type_support.h
+[1.442s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__functions.h
+[1.442s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__struct.h
+[1.443s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__type_support.h
+[1.443s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__functions.h
+[1.444s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__struct.h
+[1.444s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__type_support.h
+[1.444s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__functions.h
+[1.445s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__struct.h
+[1.445s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__type_support.h
+[1.446s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__functions.h
+[1.446s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__struct.h
+[1.447s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__type_support.h
+[1.447s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__functions.h
+[1.448s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__struct.h
+[1.448s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__type_support.h
+[1.449s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_float.h
+[1.449s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_list_param.h
+[1.449s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_model_properties.h
+[1.450s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_conversion_fcn.h
+[1.450s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_efficiency.h
+[1.451s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_state.h
+[1.451s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_float.h
+[1.452s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_thruster_efficiency.h
+[1.452s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_thruster_state.h
+[1.453s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_use_global_current_vel.h
+[1.453s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/library_path.sh
+[1.454s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/library_path.dsv
+[1.456s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__rosidl_typesupport_fastrtps_c.h
+[1.456s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__rosidl_typesupport_fastrtps_c.h
+[1.457s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__rosidl_typesupport_fastrtps_c.h
+[1.457s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.457s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__rosidl_typesupport_fastrtps_c.h
+[1.458s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__rosidl_typesupport_fastrtps_c.h
+[1.458s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__rosidl_typesupport_fastrtps_c.h
+[1.459s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__rosidl_typesupport_fastrtps_c.h
+[1.459s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__rosidl_typesupport_fastrtps_c.h
+[1.460s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__rosidl_typesupport_fastrtps_c.h
+[1.460s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__rosidl_typesupport_fastrtps_c.h
+[1.460s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__rosidl_typesupport_fastrtps_c.h
+[1.461s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__rosidl_typesupport_fastrtps_c.h
+[1.461s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__rosidl_typesupport_fastrtps_c.h
+[1.462s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_fastrtps_c.so
+[1.464s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[1.464s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__rosidl_typesupport_fastrtps_cpp.hpp
+[1.465s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__rosidl_typesupport_fastrtps_cpp.hpp
+[1.465s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.465s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__rosidl_typesupport_fastrtps_cpp.hpp
+[1.466s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__rosidl_typesupport_fastrtps_cpp.hpp
+[1.466s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__rosidl_typesupport_fastrtps_cpp.hpp
+[1.466s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__rosidl_typesupport_fastrtps_cpp.hpp
+[1.467s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__rosidl_typesupport_fastrtps_cpp.hpp
+[1.467s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.468s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__rosidl_typesupport_fastrtps_cpp.hpp
+[1.468s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__rosidl_typesupport_fastrtps_cpp.hpp
+[1.469s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.469s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__rosidl_typesupport_fastrtps_cpp.hpp
+[1.470s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.471s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__rosidl_typesupport_introspection_c.h
+[1.472s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__rosidl_typesupport_introspection_c.h
+[1.472s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__rosidl_typesupport_introspection_c.h
+[1.472s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.473s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__rosidl_typesupport_introspection_c.h
+[1.473s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__rosidl_typesupport_introspection_c.h
+[1.474s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__rosidl_typesupport_introspection_c.h
+[1.475s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__rosidl_typesupport_introspection_c.h
+[1.476s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__rosidl_typesupport_introspection_c.h
+[1.477s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__rosidl_typesupport_introspection_c.h
+[1.478s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__rosidl_typesupport_introspection_c.h
+[1.482s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__rosidl_typesupport_introspection_c.h
+[1.483s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__rosidl_typesupport_introspection_c.h
+[1.483s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__rosidl_typesupport_introspection_c.h
+[1.484s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__builder.hpp
+[1.485s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__struct.hpp
+[1.485s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__traits.hpp
+[1.486s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__builder.hpp
+[1.486s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__struct.hpp
+[1.486s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__traits.hpp
+[1.487s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__builder.hpp
+[1.487s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__struct.hpp
+[1.488s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__traits.hpp
+[1.488s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/float_stamped.hpp
+[1.488s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/thruster_conversion_fcn.hpp
+[1.489s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/underwater_object_model.hpp
+[1.489s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__builder.hpp
+[1.489s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__struct.hpp
+[1.490s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__traits.hpp
+[1.490s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__builder.hpp
+[1.490s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__struct.hpp
+[1.492s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__traits.hpp
+[1.493s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__builder.hpp
+[1.495s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__struct.hpp
+[1.495s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__traits.hpp
+[1.496s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__builder.hpp
+[1.496s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__struct.hpp
+[1.496s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__traits.hpp
+[1.498s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__builder.hpp
+[1.499s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__struct.hpp
+[1.499s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__traits.hpp
+[1.499s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__builder.hpp
+[1.500s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__struct.hpp
+[1.500s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__traits.hpp
+[1.501s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__builder.hpp
+[1.501s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__struct.hpp
+[1.502s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__traits.hpp
+[1.502s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__builder.hpp
+[1.503s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__struct.hpp
+[1.503s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__traits.hpp
+[1.504s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__builder.hpp
+[1.504s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__struct.hpp
+[1.506s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__traits.hpp
+[1.507s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__builder.hpp
+[1.507s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__struct.hpp
+[1.507s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__traits.hpp
+[1.508s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_float.hpp
+[1.509s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_list_param.hpp
+[1.509s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_model_properties.hpp
+[1.510s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_conversion_fcn.hpp
+[1.510s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_efficiency.hpp
+[1.510s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/get_thruster_state.hpp
+[1.511s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_float.hpp
+[1.513s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_thruster_efficiency.hpp
+[1.514s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_thruster_state.hpp
+[1.514s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/set_use_global_current_vel.hpp
+[1.514s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/float_stamped__rosidl_typesupport_introspection_cpp.hpp
+[1.515s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/thruster_conversion_fcn__rosidl_typesupport_introspection_cpp.hpp
+[1.515s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/msg/detail/underwater_object_model__rosidl_typesupport_introspection_cpp.hpp
+[1.515s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_float__rosidl_typesupport_introspection_cpp.hpp
+[1.516s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_list_param__rosidl_typesupport_introspection_cpp.hpp
+[1.520s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_model_properties__rosidl_typesupport_introspection_cpp.hpp
+[1.520s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_conversion_fcn__rosidl_typesupport_introspection_cpp.hpp
+[1.521s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_efficiency__rosidl_typesupport_introspection_cpp.hpp
+[1.521s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/get_thruster_state__rosidl_typesupport_introspection_cpp.hpp
+[1.522s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_float__rosidl_typesupport_introspection_cpp.hpp
+[1.522s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_efficiency__rosidl_typesupport_introspection_cpp.hpp
+[1.523s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_thruster_state__rosidl_typesupport_introspection_cpp.hpp
+[1.523s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/include/uuv_gazebo_ros_plugins_msgs/srv/detail/set_use_global_current_vel__rosidl_typesupport_introspection_cpp.hpp
+[1.524s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/pythonpath.sh
+[1.524s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/pythonpath.dsv
+[1.525s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/__init__.py
+[1.525s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/msg/__init__.py
+[1.525s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/msg/_float_stamped.py
+[1.526s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/msg/_thruster_conversion_fcn.py
+[1.526s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/msg/_underwater_object_model.py
+[1.526s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/__init__.py
+[1.527s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_float.py
+[1.530s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_list_param.py
+[1.530s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_model_properties.py
+[1.530s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_thruster_conversion_fcn.py
+[1.531s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_thruster_efficiency.py
+[1.531s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_get_thruster_state.py
+[1.532s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_set_float.py
+[1.532s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_set_thruster_efficiency.py
+[1.533s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_set_thruster_state.py
+[1.535s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/srv/_set_use_global_current_vel.py
+[1.538s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/uuv_gazebo_ros_plugins_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.539s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/uuv_gazebo_ros_plugins_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.539s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/python3.8/site-packages/uuv_gazebo_ros_plugins_msgs/uuv_gazebo_ros_plugins_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.539s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__python.so
+[1.540s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/FloatStamped.idl
+[1.540s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.idl
+[1.540s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/ThrusterConversionFcn.idl
+[1.541s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterEfficiency.idl
+[1.541s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterState.idl
+[1.541s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterEfficiency.idl
+[1.542s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterState.idl
+[1.542s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetUseGlobalCurrentVel.idl
+[1.543s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetModelProperties.idl
+[1.543s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetFloat.idl
+[1.543s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetFloat.idl
+[1.544s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetListParam.idl
+[1.544s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterConversionFcn.idl
+[1.544s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/FloatStamped.msg
+[1.544s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/UnderwaterObjectModel.msg
+[1.545s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/msg/ThrusterConversionFcn.msg
+[1.545s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterEfficiency.srv
+[1.545s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterEfficiency_Request.msg
+[1.545s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterEfficiency_Response.msg
+[1.546s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterState.srv
+[1.547s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterState_Request.msg
+[1.547s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetThrusterState_Response.msg
+[1.548s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterEfficiency.srv
+[1.548s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterEfficiency_Request.msg
+[1.548s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterEfficiency_Response.msg
+[1.548s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterState.srv
+[1.549s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterState_Request.msg
+[1.549s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterState_Response.msg
+[1.549s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetUseGlobalCurrentVel.srv
+[1.549s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetUseGlobalCurrentVel_Request.msg
+[1.550s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetUseGlobalCurrentVel_Response.msg
+[1.550s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetModelProperties.srv
+[1.553s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetModelProperties_Request.msg
+[1.553s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetModelProperties_Response.msg
+[1.554s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetFloat.srv
+[1.554s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetFloat_Request.msg
+[1.555s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/SetFloat_Response.msg
+[1.555s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetFloat.srv
+[1.556s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetFloat_Request.msg
+[1.557s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetFloat_Response.msg
+[1.557s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetListParam.srv
+[1.559s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetListParam_Request.msg
+[1.559s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetListParam_Response.msg
+[1.561s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterConversionFcn.srv
+[1.562s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterConversionFcn_Request.msg
+[1.562s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/srv/GetThrusterConversionFcn_Response.msg
+[1.563s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/ament_index/resource_index/package_run_dependencies/uuv_gazebo_ros_plugins_msgs
+[1.563s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/ament_index/resource_index/parent_prefix_path/uuv_gazebo_ros_plugins_msgs
+[1.564s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/ament_prefix_path.sh
+[1.564s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/ament_prefix_path.dsv
+[1.565s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/path.sh
+[1.566s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/environment/path.dsv
+[1.566s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/local_setup.bash
+[1.567s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/local_setup.sh
+[1.571s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/local_setup.zsh
+[1.572s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/local_setup.dsv
+[1.573s] -- Symlinking: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.dsv
+[1.574s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/ament_index/resource_index/packages/uuv_gazebo_ros_plugins_msgs
+[1.574s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/rosidl_cmake-extras.cmake
+[1.574s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.575s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.575s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.577s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.577s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.578s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.578s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgsConfig.cmake
+[1.579s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgsConfig-version.cmake
+[1.580s] -- Up-to-date symlink: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/package.xml
+[1.580s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_generator_c.so
+[1.580s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_c.so
+[1.580s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_c.so
+[1.582s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cpp.so
+[1.582s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/lib/libuuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cpp.so
+[1.655s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_generator_cExport.cmake
+[1.656s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.656s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.659s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.659s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cExport.cmake
+[1.659s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.659s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_generator_cppExport.cmake
+[1.660s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.660s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.662s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cppExport.cmake
+[1.671s] -- Up-to-date: /home/brenda/RBIM_ws/src/uuv_simulator/install/uuv_gazebo_ros_plugins_msgs/share/uuv_gazebo_ros_plugins_msgs/cmake/uuv_gazebo_ros_plugins_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.680s] Invoked command in '/home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/brenda/RBIM_ws/src/uuv_simulator/build/uuv_gazebo_ros_plugins_msgs
