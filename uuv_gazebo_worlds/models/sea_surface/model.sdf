@@ -14,7 +14,7 @@
         </geometry>
         <material>
           <script>
-            <uri>file://Media/materials/scripts/waves.material</uri>
+            <uri>file://materials/scripts/waves.material</uri>
             <name>UUVSimulator/SimpleWaves</name>
           </script>
         </material>
@@ -31,7 +31,7 @@
         </geometry>
         <material>
           <script>
-            <uri>file://Media/materials/scripts/water.material</uri>
+            <uri>file://materials/scripts/water.material</uri>
             <name>UUVSimulator/StaticWater</name>
           </script>
         </material>

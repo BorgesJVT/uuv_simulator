@@ -44,7 +44,7 @@
 
     <!-- Bounding box with sea surface -->
     <include>
-      <uri>model://ocean_box</uri>
+      <uri>model://sand_heightmap</uri>
       <pose>0 0 0 0 0 0</pose>
     </include>
 
