@@ -144,7 +144,7 @@ if __name__ == '__main__':
     try:
         node = AUVControlAllocator()
         self.spin()
-    except self.get_logger().warn('AUVControlAllocator::Exception')
-    print('Leaving AUVControlAllocator')
+    except self.get_logger().warn('AUVControlAllocator::Exception'):
+        print('Leaving AUVControlAllocator')
 
         
