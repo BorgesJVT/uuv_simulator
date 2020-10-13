@@ -481,12 +481,12 @@ void UUVWorldPluginsUnderwaterCurrentPrivate::Update()
       current_vel_mag * sin(horz_angle) * cos(vert_angle),
       current_vel_mag * sin(vert_angle));
 
-  std::cout << "current_vel_mag: " << current_vel_mag << std::endl;
-    std::cout << horz_angle << std::endl;
-      std::cout << vert_angle << std::endl;
-  std::cout << current_velocity_.X() << std::endl;
-    std::cout << current_velocity_.Y() << std::endl;
-      std::cout << current_velocity_.Z() << std::endl;
+  // std::cout << "current_vel_mag: " << current_vel_mag << std::endl;
+  //   std::cout << horz_angle << std::endl;
+  //     std::cout << vert_angle << std::endl;
+  // std::cout << current_velocity_.X() << std::endl;
+  //   std::cout << current_velocity_.Y() << std::endl;
+  //     std::cout << current_velocity_.Z() << std::endl;
   // Update time stamp
   last_update_time_ = time;
   //->Publish(current_velocity_topic_);

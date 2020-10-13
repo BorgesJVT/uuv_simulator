@@ -1,31 +1,3 @@
-# <launch>
-#   <arg name="debug" default="0"/>
-
-#   <arg name="x" default="0"/>
-#   <arg name="y" default="0"/>
-#   <arg name="z" default="-20"/>
-#   <arg name="roll" default="0.0"/>
-#   <arg name="pitch" default="0.0"/>
-#   <arg name="yaw" default="0.0"/>
-
-#   <arg name="mode" default="default"/>
-#   <arg name="namespace" default="rexrov"/>
-#   <arg name="use_ned_frame" default="false"/>
-
-#   <include file="$(find uuv_descriptions)/launch/upload_rexrov_$(arg mode).launch">
-#     <arg name="debug" value="$(arg debug)"/>
-#     <arg name="x" value="$(arg x)"/>
-#     <arg name="y" value="$(arg y)"/>
-#     <arg name="z" value="$(arg z)"/>
-#     <arg name="roll" value="$(arg roll)"/>
-#     <arg name="pitch" value="$(arg pitch)"/>
-#     <arg name="yaw" value="$(arg yaw)"/>
-#     <arg name="use_ned_frame" value="$(arg use_ned_frame)"/>
-#     <arg name="namespace" value="$(arg namespace)"/>
-#   </include>
-
-# </launch>
-
 import os
 
 import launch
@@ -42,7 +14,10 @@ import xacro
 
 
 def generate_launch_description():
-    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    
+    #x = LaunchConfiguration('x', default='0.0')
+    #y = LaunchConfiguration('y', default='0.0')
+    #z = LaunchConfiguration('z', default='0.0')
     pkg_share = FindPackageShare('uuv_descriptions').find('uuv_descriptions')
     urdf_dir = os.path.join(pkg_share, 'urdf')
     xacro_file = os.path.join(urdf_dir, 'rexrov_base.xacro')
@@ -61,7 +36,16 @@ def generate_launch_description():
             cmd=['ros2', 'service', 'call', '/spawn_entity', 'gazebo_msgs/SpawnEntity', spawn_args],
             output='screen')
     
+    rsp = Node(
+            package='robot_state_publisher',
+            executable='robot_state_publisher',
+            name='robot_state_publisher',
+            output='screen',
+            parameters=[{'use_sim_time': 'true'}],
+            arguments=[robot_desc])
+            
     return LaunchDescription([
         #gazebo,
         spawn_entity,
+        rsp,
     ])
