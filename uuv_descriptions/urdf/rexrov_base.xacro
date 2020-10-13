@@ -121,17 +121,17 @@
             </hydrodynamic_model>
         </link>
     </xacro:macro>
-<!-- 
+
     <gazebo>
-      <plugin name="uuv_plugin" filename="libuuv_underwater_object_ros_plugin.so">
+      <plugin name="uuv_plugin" filename="libuuv_underwater_object_plugin.so">
         <fluid_density>1028.0</fluid_density>
         <flow_velocity_topic>hydrodynamics/current_velocity</flow_velocity_topic>
-        <debug>$(arg debug)</debug>
-        Adding the hydrodynamic and hydrostatic parameters for the vehicle
-        <xacro:rexrov_hydro_model namespace="$(arg namespace)"/>
+        <!-- <debug>$(arg debug)</debug> 
+        Adding the hydrodynamic and hydrostatic parameters for the vehicle -->
+        <xacro:rexrov_hydro_model namespace="rexrov"/>
       </plugin>
     </gazebo>
--->
+
     
     <xacro:include filename="$(find uuv_descriptions)/urdf/rexrov_actuators.xacro"/>
 <!--
