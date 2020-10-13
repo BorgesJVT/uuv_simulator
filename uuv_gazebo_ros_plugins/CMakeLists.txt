@@ -80,12 +80,13 @@ link_directories(
 # ament_export_libraries(uuv_underwater_object_ros_plugin)
 # list(APPEND UUV_GAZEBO_ROS_PLUGINS_LIST uuv_underwater_object_ros_plugin)
 
-#add_library(uuv_joint_state_publisher SHARED src/JointStatePublisher.cc)
-#ament_target_dependencies(uuv_joint_state_publisher
-#  "gazebo_dev"
-#  "rclcpp"
-#)
-#list(APPEND UUV_GAZEBO_ROS_PLUGINS_LIST uuv_joint_state_publisher)
+add_library(uuv_joint_state_publisher SHARED src/JointStatePublisher.cc)
+ament_target_dependencies(uuv_joint_state_publisher
+  "gazebo_dev"
+  "rclcpp"
+  "sensor_msgs"
+)
+list(APPEND UUV_GAZEBO_ROS_PLUGINS_LIST uuv_joint_state_publisher)
 
 # add_library(uuv_accelerations_test_plugin src/AccelerationsTestPlugin.cc)
 # #target_link_libraries(uuv_accelerations_test_plugin ${GAZEBO_LIBRARIES} ${catkin_LIBRARIES})

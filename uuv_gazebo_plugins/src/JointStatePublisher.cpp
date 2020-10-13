@@ -1,0 +1,161 @@
+#include <uuv_gazebo_plugins/JointStatePublisher.hpp>
+
+namespace uuv_gazebo_plugins
+{
+GZ_REGISTER_MODEL_PLUGIN(JointStatePublisher)
+
+JointStatePublisher::JointStatePublisher()
+{
+    this->model = NULL;
+    this->world = NULL;
+}
+
+JointStatePublisher::~JointStatePublisher()
+{
+    
+}
+
+void JointStatePublisher::Load(gazebo::physics::ModelPtr _parent,
+  sdf::ElementPtr _sdf)
+{
+  this->model = _parent;
+
+  GZ_ASSERT(this->model != NULL, "Invalid model pointer");
+
+  this->world = this->model->GetWorld();
+
+  if (!rclcpp::ok())
+  {
+    gzerr << "ROS was not initialized. Closing plugin..." << std::endl;
+    return;
+  }
+
+// Initialize ROS node ???????????????????????????????????
+// @TODO Ao inves de operar em sdf, pode ser usado o nó no robotnamespace abaixo?
+  this->rosNode=gazebo_ros::Node::Get(_sdf);
+
+  //this->node = boost::shared_ptr<ros::NodeHandle>(
+  //  new ros::NodeHandle(this->robotNamespace));
+  // Retrieve the namespace used to publish the joint states
+  if (_sdf->HasElement("robotNamespace"))
+    this->robotNamespace = _sdf->Get<std::string>("robotNamespace");
+  else
+    this->robotNamespace = this->model->GetName();
+
+  gzmsg << "JointStatePublisher::robotNamespace="
+    << this->robotNamespace << std::endl;
+
+  if (this->robotNamespace[0] != '/')
+    this->robotNamespace = "/" + this->robotNamespace;
+
+  if (_sdf->HasElement("updateRate"))
+    this->updateRate = _sdf->Get<double>("updateRate");
+  else
+    this->updateRate = 50;
+
+  gzmsg << "JointStatePublisher::Retrieving moving joints:" << std::endl;
+  this->movingJoints.clear();
+  double upperLimit, lowerLimit;
+  for (auto &joint : this->model->GetJoints())
+  {
+#if GAZEBO_MAJOR_VERSION >= 8
+  lowerLimit = joint->LowerLimit(0);
+  upperLimit = joint->UpperLimit(0);
+#else
+  lowerLimit = joint->GetLowerLimit(0).Radian();
+  upperLimit = joint->GetUpperLimit(0).Radian();
+#endif
+    if (lowerLimit  == 0 && upperLimit == 0)
+      continue;
+    else if (joint->GetType() == gazebo::physics::Base::EntityType::FIXED_JOINT)
+      continue;
+    else
+    {
+      this->movingJoints.push_back(joint->GetName());
+      gzmsg << "\t- " << joint->GetName() << std::endl;
+    }
+  }
+
+  GZ_ASSERT(this->updateRate > 0, "Update rate must be positive");
+
+  // Setting the update period
+  this->updatePeriod = 1.0 / this->updateRate;
+
+  // Advertise the joint states topic
+  this->jointStatePub = this->rosNode->create_publisher<sensor_msgs::msg::JointState>(this->robotNamespace + "/joint_states", 1);
+
+#if GAZEBO_MAJOR_VERSION >= 8
+  this->lastUpdate = this->world->SimTime();
+#else
+  this->lastUpdate = this->world->GetSimTime();
+#endif
+  // Connect the update function to the Gazebo callback
+  this->updateConnection = gazebo::event::Events::ConnectWorldUpdateBegin(
+    boost::bind(&JointStatePublisher::OnUpdate, this, _1));
+}
+
+void JointStatePublisher::OnUpdate(const gazebo::common::UpdateInfo &_info)
+{
+#if GAZEBO_MAJOR_VERSION >= 8
+  gazebo::common::Time simTime = this->world->SimTime();
+#else
+  gazebo::common::Time simTime = this->world->GetSimTime();
+#endif
+  if (simTime - this->lastUpdate >= this->updatePeriod)
+  {
+    this->PublishJointStates();
+    this->lastUpdate = simTime;
+  }
+}
+
+void JointStatePublisher::PublishJointStates()
+{
+  rclcpp::Time stamp = this->rosNode->get_clock()->now(); //Rever qual NODE é o de controle de estado da junta
+
+  sensor_msgs::msg::JointState jointState;
+
+  jointState.header.stamp = stamp;
+  // Resize containers
+  jointState.name.resize(this->model->GetJointCount());
+  jointState.position.resize(this->model->GetJointCount());
+  jointState.velocity.resize(this->model->GetJointCount());
+  jointState.effort.resize(this->model->GetJointCount());
+
+  int i = 0;
+  for (auto &joint : this->model->GetJoints())
+  {
+    if (!this->IsIgnoredJoint(joint->GetName()))
+    {
+      jointState.name[i] = joint->GetName();
+#if GAZEBO_MAJOR_VERSION >= 8
+      jointState.position[i] = joint->Position(0);
+#else
+      jointState.position[i] = joint->GetAngle(0).Radian();
+#endif
+      jointState.velocity[i] = joint->GetVelocity(0);
+      jointState.effort[i] = joint->GetForce(0);
+    }
+      else
+    {
+      jointState.name[i] = joint->GetName();
+      jointState.position[i] = 0.0;
+      jointState.velocity[i] = 0.0;
+      jointState.effort[i] = 0.0;
+    }
+
+    ++i;
+  }
+
+  this->jointStatePub->publish(jointState);
+}
+
+bool JointStatePublisher::IsIgnoredJoint(std::string _jointName)
+{
+  if (this->movingJoints.empty()) return true;
+  for (auto joint : this->movingJoints)
+    if (_jointName.compare(joint) == 0)
+      return false;
+  return true;
+}
+
+}  // namesoace uuv_gazebo_plugins
