@@ -1,0 +1,11 @@
+source;share/uuv_control_cascaded_pids/hook/cmake_prefix_path.ps1
+source;share/uuv_control_cascaded_pids/hook/cmake_prefix_path.dsv
+source;share/uuv_control_cascaded_pids/hook/cmake_prefix_path.sh
+source;share/uuv_control_cascaded_pids/hook/pythonpath.ps1
+source;share/uuv_control_cascaded_pids/hook/pythonpath.dsv
+source;share/uuv_control_cascaded_pids/hook/pythonpath.sh
+source;share/uuv_control_cascaded_pids/local_setup.bash
+source;share/uuv_control_cascaded_pids/local_setup.dsv
+source;share/uuv_control_cascaded_pids/local_setup.ps1
+source;share/uuv_control_cascaded_pids/local_setup.sh
+source;share/uuv_control_cascaded_pids/local_setup.zsh

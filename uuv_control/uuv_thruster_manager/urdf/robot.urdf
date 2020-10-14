@@ -1,0 +1,484 @@
+<?xml version="1.0" ?>
+
+<robot name="rexrov">
+  <!-- Some pretty colors -->
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+  <material name="grey">
+    <color rgba="0.7 0.7 0.7 1.0"/>
+  </material>
+  <material name="grey2">
+    <color rgba="0.9 0.9 0.9 1.0"/>
+  </material>
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.5 0.0 1.0"/>
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+  <material name="black">
+    <color rgba="0.05 0.05 0.05 1.0"/>
+  </material>
+  <!-- ROTOR DYNAMICS MACROS -->
+  <!-- First order dynamics -->
+  <!--
+    MACROS FOR CONVERSION FUNCTIONS BETWEEN ROTOR'S ANG. VELOCITY AND
+    THRUSTER FORCE
+  -->
+  <!-- THRUSTER MODULE MACROS  -->
+  <!--
+    Thruster model with first order dynamic model for the rotor dynamics
+    and a proportional non-linear steady-state conversion from the rotor's
+    angular velocity to output thrust force
+  -->
+  <!--
+  <xacro:macro name="rexrov_base" params="namespace *gazebo inertial_reference_frame">
+-->
+  <!-- base_link according to ROS conventions: x forward, z up -->
+  <link name="rexrov/base_link">
+    <inertial>
+      <mass value="1862.87"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="525.39" ixy="1.44" ixz="33.41" iyy="794.20" iyz="2.6" izz="691.23"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <!-- bottom plate -->
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.75"/>
+      <geometry>
+        <box size="2.56 1.50 0.10"/>
+      </geometry>
+    </collision>
+    <!-- top plate -->
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.60"/>
+      <geometry>
+        <box size="2.56 1.50 0.40"/>
+      </geometry>
+    </collision>
+    <!-- left / right sides -->
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.20 0.70 -0.15"/>
+      <geometry>
+        <box size="2.20 0.10 1.10"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.20 -0.70 -0.15"/>
+      <geometry>
+        <box size="2.20 0.10 1.10"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Set up hydrodynamic plugin given as input parameter -->
+  <!--
+    <xacro:insert_block name="gazebo"/>
+-->
+  <!-- optional: plugin to test compare Gazebo's returned accelerations
+    <gazebo>
+      <plugin name="${namespace}_test_plugin" filename="libuuv_accelerations_test_plugin.so">
+        <link_name>${namespace}/base_link</link_name>
+      </plugin>
+    </gazebo> -->
+  <joint name="rexrov/thruster_0_joint" type="continuous">
+    <origin rpy="0.0 -1.3007937037 -0.9286895609" xyz="-0.890895 0.334385 0.528822"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_0"/>
+  </joint>
+  <link name="rexrov/thruster_0">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_0_thruster_model">
+      <linkName>rexrov/thruster_0</linkName>
+      <jointName>rexrov/thruster_0_joint</jointName>
+      <thrusterID>0</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_0">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_1_joint" type="continuous">
+    <origin rpy="0.0 -1.3007937037 0.9286895609" xyz="-0.890895 -0.334385 0.528822"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_1"/>
+  </joint>
+  <link name="rexrov/thruster_1">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_1_thruster_model">
+      <linkName>rexrov/thruster_1</linkName>
+      <jointName>rexrov/thruster_1_joint</jointName>
+      <thrusterID>1</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_1">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_2_joint" type="continuous">
+    <origin rpy="0.0 -1.8407984963 0.9286895609" xyz="0.890895 0.334385 0.528822"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_2"/>
+  </joint>
+  <link name="rexrov/thruster_2">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_2_thruster_model">
+      <linkName>rexrov/thruster_2</linkName>
+      <jointName>rexrov/thruster_2_joint</jointName>
+      <thrusterID>2</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_2">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_3_joint" type="continuous">
+    <origin rpy="0.0 -1.8407984963 -0.9286895609" xyz="0.890895 -0.334385 0.528822"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_3"/>
+  </joint>
+  <link name="rexrov/thruster_3">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_3_thruster_model">
+      <linkName>rexrov/thruster_3</linkName>
+      <jointName>rexrov/thruster_3_joint</jointName>
+      <thrusterID>3</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_3">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_4_joint" type="continuous">
+    <origin rpy="0.0 0.0 0.78539805" xyz="-0.412125 0.505415 0.129"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_4"/>
+  </joint>
+  <link name="rexrov/thruster_4">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_4_thruster_model">
+      <linkName>rexrov/thruster_4</linkName>
+      <jointName>rexrov/thruster_4_joint</jointName>
+      <thrusterID>4</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_4">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_5_joint" type="continuous">
+    <origin rpy="0.0 0.0 -0.78539805" xyz="-0.412125 -0.505415 0.129"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_5"/>
+  </joint>
+  <link name="rexrov/thruster_5">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_5_thruster_model">
+      <linkName>rexrov/thruster_5</linkName>
+      <jointName>rexrov/thruster_5_joint</jointName>
+      <thrusterID>5</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_5">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_6_joint" type="continuous">
+    <origin rpy="0.0 0.0 2.35619415" xyz="0.412125 0.505415 0.129"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_6"/>
+  </joint>
+  <link name="rexrov/thruster_6">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_6_thruster_model">
+      <linkName>rexrov/thruster_6</linkName>
+      <jointName>rexrov/thruster_6_joint</jointName>
+      <thrusterID>6</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_6">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <joint name="rexrov/thruster_7_joint" type="continuous">
+    <origin rpy="0.0 0.0 -2.35619415" xyz="0.412125 -0.505415 0.129"/>
+    <axis xyz="1 0 0"/>
+    <parent link="rexrov/base_link"/>
+    <child link="rexrov/thruster_7"/>
+  </joint>
+  <link name="rexrov/thruster_7">
+    <inertial>
+      <mass value="0.001"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+           the joint that leads to this link (and assume it to be the identity) -->
+      <geometry>
+        <cylinder length="0.000001" radius="0.000001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+  </link>
+  <gazebo>
+    <plugin filename="libuuv_thruster_plugin.so" name="rexrov_7_thruster_model">
+      <linkName>rexrov/thruster_7</linkName>
+      <jointName>rexrov/thruster_7_joint</jointName>
+      <thrusterID>7</thrusterID>
+      <!--    COLCOAR AQUI AS DEFINICOES DE ATRIBUTOS INICIAIS PRA CARREGAR NO LOAD
+        <thrust_efficiency>100</thrust_efficiency>
+-->
+      <dynamics>
+        <type>FirstOrder</type>
+        <timeConstant>0.05</timeConstant>
+      </dynamics>
+      <conversion>
+        <type>Basic</type>
+        <rotorConstant>0.00031</rotorConstant>
+      </conversion>
+    </plugin>
+  </gazebo>
+  <gazebo reference="rexrov/thruster_7">
+    <selfCollide>false</selfCollide>
+  </gazebo>
+  <!-- 
+    <xacro:include filename="$(find uuv_descriptions)/urdf/rexrov_sensors.xacro"/>
+
+  </xacro:macro>
+-->
+</robot>

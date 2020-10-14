@@ -1,0 +1,110 @@
+[0.027s] Invoking command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids -DCMAKE_INSTALL_PREFIX=/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids
+[0.115s] -- The C compiler identification is GNU 9.3.0
+[0.189s] -- The CXX compiler identification is GNU 9.3.0
+[0.197s] -- Check for working C compiler: /usr/bin/cc
+[0.294s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.295s] -- Detecting C compiler ABI info
+[0.384s] -- Detecting C compiler ABI info - done
+[0.397s] -- Detecting C compile features
+[0.397s] -- Detecting C compile features - done
+[0.400s] -- Check for working CXX compiler: /usr/bin/c++
+[0.500s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.501s] -- Detecting CXX compiler ABI info
+[0.629s] -- Detecting CXX compiler ABI info - done
+[0.642s] -- Detecting CXX compile features
+[0.643s] -- Detecting CXX compile features - done
+[0.647s] -- Found ament_cmake: 0.9.6 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.689s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.689s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.942s] -- Found rclcpp: 2.1.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.990s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.002s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.156s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.202s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.313s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.392s] -- Found rmw_implementation_cmake: 1.0.1 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.396s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.397s] -- Looking for pthread.h
+[1.489s] -- Looking for pthread.h - found
+[1.490s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.594s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.594s] -- Looking for pthread_create in pthreads
+[1.678s] -- Looking for pthread_create in pthreads - not found
+[1.678s] -- Looking for pthread_create in pthread
+[1.775s] -- Looking for pthread_create in pthread - found
+[1.776s] -- Found Threads: TRUE  
+[1.971s] -- Found rclpy: 1.0.4 (/opt/ros/foxy/share/rclpy/cmake)
+[1.974s] -- Found geometry_msgs: 2.0.3 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.014s] -- Found nav_msgs: 2.0.3 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.139s] -- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.252s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.258s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.258s] -- Configured cppcheck include dirs: 
+[2.258s] -- Configured cppcheck exclude dirs and/or files: 
+[2.265s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.265s] -- Configured cpplint exclude dirs and/or files: 
+[2.267s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.269s] -- Added test 'lint_cmake' to check CMake code style
+[2.270s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.278s] -- Added test 'uncrustify' to check C / C++ code style
+[2.278s] -- Configured uncrustify additional arguments: 
+[2.280s] -- Added test 'xmllint' to check XML markup files
+[2.285s] -- Configuring done
+[2.287s] -- Generating done
+[2.290s] -- Build files have been written to: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids
+[2.302s] Invoked command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids -DCMAKE_INSTALL_PREFIX=/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids
+[2.306s] Invoking command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids -- -j8 -l8
+[2.362s] Invoked command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --build /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids -- -j8 -l8
+[2.420s] Invoking command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids
+[2.432s] -- Install configuration: ""
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/pythonpath.sh
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/pythonpath.dsv
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/PIDRegulator.py
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/VelocityControl.py
+[2.432s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/PositionControl.py
+[2.433s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/AccelerationControl.py
+[2.433s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/__init__.py
+[2.482s] Listing '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids'...
+[2.483s] Compiling '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/AccelerationControl.py'...
+[2.483s] ***   File "/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/AccelerationControl.py", line 17
+[2.483s]     from __future__ import print_function
+[2.483s]     ^
+[2.483s] SyntaxError: from __future__ imports must occur at the beginning of the file
+[2.483s] 
+[2.483s] Compiling '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/PIDRegulator.py'...
+[2.483s] Compiling '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/PositionControl.py'...
+[2.484s] Compiling '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/VelocityControl.py'...
+[2.484s] Compiling '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/lib/python3.8/site-packages/uuv_control_cascaded_pids/__init__.py'...
+[2.487s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/bin/uuv_control_cascaded_pids/AccelerationControl.py
+[2.488s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/bin/uuv_control_cascaded_pids/PositionControl.py
+[2.488s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/bin/uuv_control_cascaded_pids/VelocityControl.py
+[2.488s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/cfg
+[2.488s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config
+[2.488s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/joy_accel.yaml
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/rexrov
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/rexrov/vel_pid_control.yaml
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/rexrov/inertial.yaml
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/rexrov/pos_pid_control.yaml
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/config/joy_vel.yaml
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/launch
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/launch/key_board_velocity.launch.py
+[2.489s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/launch/joy_accel.launch.py
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/launch/joy_velocity.launch.py
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/launch/position_hold.launch.py
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/ament_index/resource_index/package_run_dependencies/uuv_control_cascaded_pids
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/ament_index/resource_index/parent_prefix_path/uuv_control_cascaded_pids
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/ament_prefix_path.sh
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/ament_prefix_path.dsv
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/path.sh
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/environment/path.dsv
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/local_setup.bash
+[2.490s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/local_setup.sh
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/local_setup.zsh
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/local_setup.dsv
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/package.dsv
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/ament_index/resource_index/packages/uuv_control_cascaded_pids
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/cmake/uuv_control_cascaded_pidsConfig.cmake
+[2.491s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/cmake/uuv_control_cascaded_pidsConfig-version.cmake
+[2.492s] -- Installing: /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/install/uuv_control_cascaded_pids/share/uuv_control_cascaded_pids/package.xml
+[2.495s] Invoked command in '/home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rodrigosleonello/dev_ws/install/nav2_gazebo_spawner:/opt/ros/foxy /usr/bin/cmake --install /home/rodrigosleonello/dev_ws/src/uuv_simulator/uuv_control/uuv_control_cascaded_pids/build/uuv_control_cascaded_pids

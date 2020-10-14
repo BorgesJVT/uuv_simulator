@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>uuv_thruster_manager</name>
+  <version>0.0.0</version>
+  <description>The thruster manager package</description>
+  <maintainer email="rodrigosleonello@gmail.com">rodrigosleonello</maintainer>
+  <license>Apache-2.0</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <build_depend>message_generation</build_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>builtin_interfaces</depend>
+  <depend>rosidl_default_generators</depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <exec_depend>python-yaml</exec_depend>
+  <exec_depend>uuv_gazebo_ros_plugins_msgs</exec_depend>
+  <exec_depend>uuv_descriptions</exec_depend>
+  <exec_depend>uuv_assistants</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

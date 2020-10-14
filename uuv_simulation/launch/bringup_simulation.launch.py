@@ -18,12 +18,8 @@ def generate_launch_description():
         launch.actions.IncludeLaunchDescription(
             launch.launch_description_sources.PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory(
-                    'uuv_thruster_manager'), 'launch/thruster_manager.launch.py')
-            ),
-            launch_arguments={
-                'uuv_name': launch.substitutions.LaunchConfiguration('uuv_name'),
-                'model_name': launch.substitutions.LaunchConfiguration('model_name')
-            }.items()
+                    'uuv_gazebo_worlds'), 'launch/empty_underwater_world.launch.py')
+            )
         )
         # launch.actions.IncludeLaunchDescription(
         #     launch.launch_description_sources.PythonLaunchDescriptionSource(
@@ -37,38 +33,7 @@ def generate_launch_description():
         #     }.items()
         # )
     ])
-
-    accel_node = launch_ros.actions.Node(
-        package='uuv_control_cascaded_pids',
-        executable="acc_control",
-        output='log',
-        #prefix = 'gnome-terminal -- ',
-        name='acceleration_control'
-    )
-
-    veloc_node = launch_ros.actions.Node(
-        package='uuv_control_cascaded_pids',
-        executable="vel_control",
-        output='log',
-        #prefix = 'gnome-terminal -- ',
-        name='velocity_control'
-    )
-
-    teleop_node = launch_ros.actions.Node(
-            package='teleop_twist_keyboard',
-            executable='teleop_twist_keyboard',
-            output='screen',
-            prefix = 'gnome-terminal -- ',
-            name='teleop_twist_keyboard_node'
-            #parameters=[config_filepath]),   
-    )
-
-    ld.add_action(veloc_node)
-    ld.add_action(accel_node)
-    ld.add_action(teleop_node)
-
     return ld
-
 
 if __name__ == '__main__':
     generate_launch_description()
