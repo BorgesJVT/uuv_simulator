@@ -59,7 +59,10 @@ HydrodynamicModel::HydrodynamicModel(sdf::ElementPtr _sdf,
       double width = sdfModel->Get<double>("width");
       double length = sdfModel->Get<double>("length");
       double height = sdfModel->Get<double>("height");
-      ignition::math::Box boundingBox = ignition::math::Box(
+      std::cout << "width: " << width << std::endl;
+      std::cout << "length: " << length << std::endl;
+      std::cout << "height: " << height << std::endl;
+      ignition::math::Box boundingBox = ignition::math::Boxd(
             ignition::math::Vector3d(width, length, height));
       // Setting the the bounding box from the given dimensions
       this->SetBoundingBox(boundingBox);

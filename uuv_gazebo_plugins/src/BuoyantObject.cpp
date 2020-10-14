@@ -31,7 +31,7 @@ BuoyantObject::BuoyantObject(gazebo::physics::LinkPtr _link)
   this->link = _link;
 
   ignition::math::AxisAlignedBox BBOX = link->BoundingBox();
-  this->boundingBox = ignition::math::Box(BBOX.XLength(), BBOX.YLength(), BBOX.ZLength());
+  this->boundingBox = ignition::math::Boxd(BBOX.XLength(), BBOX.YLength(), BBOX.ZLength());
 
   // Set neutrally buoyant flag to false
   this->neutrallyBuoyant = false;
@@ -185,8 +185,8 @@ void BuoyantObject::ApplyBuoyancyForce()
 /////////////////////////////////////////////////
 void BuoyantObject::SetBoundingBox(const ignition::math::Boxd &_bBox)
 {
-  this->boundingBox = ignition::math::Boxd(_bBox);
-
+  //this->boundingBox = ignition::math::Boxd(_bBox);
+  this->boundingBox = _bBox;
   gzmsg << "New bounding box for " << this->link->GetName() << "::"
     << this->boundingBox.Size() << std::endl;
 }
