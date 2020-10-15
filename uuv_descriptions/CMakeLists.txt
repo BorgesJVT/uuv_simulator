@@ -29,27 +29,28 @@ find_package(tf2 REQUIRED)
 # catkin_install_python(PROGRAMS scripts/spawn_model
 #                       DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
-# add_executable(uuv_message_to_tf
-#   src/message_to_tf.cpp
-# )
-# ament_target_dependencies(uuv_message_to_tf
-#   "rclcpp"
-#   "geometry_msgs"
-#   "sensor_msgs"
-#   "nav_msgs"
-#   "tf2_ros"
-#   "tf2"
-# )
+add_executable(uuv_message_to_tf
+  src/message_to_tf.cpp
+)
+ament_target_dependencies(uuv_message_to_tf
+  "rclcpp"
+  "geometry_msgs"
+  "sensor_msgs"
+  "nav_msgs"
+  "tf2_ros"
+  "tf2"
+)
 
 ################################################################################
 # Install
 ################################################################################
 
-# install(TARGETS uuv_message_to_tf
-#   ARCHIVE DESTINATION lib
-#   LIBRARY DESTINATION lib
-#   RUNTIME DESTINATION bin
-# )
+install(TARGETS uuv_message_to_tf
+  DESTINATION lib/${PROJECT_NAME}
+  #ARCHIVE DESTINATION lib
+  #LIBRARY DESTINATION lib
+  #RUNTIME DESTINATION bin
+)
 
 
 install(DIRECTORY launch meshes robots urdf

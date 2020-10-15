@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import setup
 
 PACKAGE_NAME = 'uuv_control_cascaded_pids'
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + PACKAGE_NAME]),
         ('share/' + PACKAGE_NAME, ['package.xml']),
+        (os.path.join('share', PACKAGE_NAME, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

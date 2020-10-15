@@ -39,20 +39,27 @@ class AccelerationControllerNode(Node):
         self.sub_force = self.create_subscription(Accel, 'cmd_force', self.force_callback, 10)
         self.pub_gen_force = self.create_publisher(Wrench, 'thruster_manager/input', 1)
 
-        if not self.has_parameter("pid/mass"):
-            self.get_logger().warn("UUV's mass was not provided")
+        # if not self.has_parameter("pid/mass"):
+        #     self.get_logger().warn("UUV's mass was not provided")
 
-        if not self.has_parameter("pid/inertial"):
-            self.get_logger().warn("UUV's inertial was not provided")
+        # if not self.has_parameter("pid/inertial"):
+        #     self.get_logger().warn("UUV's inertial was not provided")
 
-        self.mass = self.get_parameter("pid/mass")
-        self.inertial = self.get_parameter("pid/inertial")
+        # self.mass = self.get_parameter("pid/mass")
+        # self.inertial = self.get_parameter("pid/inertial")
+        
+        self.mass = 1862.0
 
         # update mass, moments of inertia
-        self.inertial_tensor = numpy.array(
-          [[self.inertial['ixx'], self.inertial['ixy'], self.inertial['ixz']],
-           [self.inertial['ixy'], self.inertial['iyy'], self.inertial['iyz']],
-           [self.inertial['ixz'], self.inertial['iyz'], self.inertial['izz']]])
+        # self.inertial_tensor = numpy.array(
+        #   [[self.inertial['ixx'], self.inertial['ixy'], self.inertial['ixz']],
+        #    [self.inertial['ixy'], self.inertial['iyy'], self.inertial['iyz']],
+        #    [self.inertial['ixz'], self.inertial['iyz'], self.inertial['izz']]])
+      
+        self.inertial_tensor = numpy.array([[525.39, 0, 0], 
+                                            [0, 794.20, 0], 
+                                            [0, 0, 691.23]])
+      
         self.mass_inertial_matrix = numpy.vstack((
           numpy.hstack((self.mass*numpy.identity(3), numpy.zeros((3, 3)))),
           numpy.hstack((numpy.zeros((3, 3)), self.inertial_tensor))))

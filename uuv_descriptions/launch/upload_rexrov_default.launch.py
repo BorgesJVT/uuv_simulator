@@ -3,7 +3,10 @@ import sys
 
 import launch
 import launch_ros.actions
+from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
+from launch_ros.substitutions import FindPackageShare
+import xacro
 
 pkg_share = FindPackageShare('uuv_descriptions').find('uuv_descriptions')
 urdf_dir = os.path.join(pkg_share, 'urdf')
@@ -66,15 +69,15 @@ def generate_launch_description():
 
         launch.actions.ExecuteProcess(
                 cmd=['ros2', 'service', 'call', '/spawn_entity', 'gazebo_msgs/SpawnEntity', spawn_args],
-                output='screen')
+                output='screen'),
         
-        launch.actions.Node(
+        launch_ros.actions.Node(
                 package='robot_state_publisher',
                 executable='robot_state_publisher',
                 name='robot_state_publisher',
                 output='screen',
                 parameters=[{'use_sim_time': 'true'}],
-                arguments=[robot_desc])
+                arguments=[robot_desc]),
                             
         launch.actions.IncludeLaunchDescription(
             launch.launch_description_sources.PythonLaunchDescriptionSource(

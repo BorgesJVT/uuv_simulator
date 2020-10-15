@@ -21,6 +21,7 @@ from rclpy.node import Node
 #from dynamic_reconfigure.server import Server
 from geometry_msgs.msg import Twist, Accel, Vector3
 from nav_msgs.msg import Odometry
+from gazebo_msgs.msg import ModelStates
 
 # Modules included in this package
 from uuv_control_cascaded_pids import PIDRegulator
@@ -64,14 +65,24 @@ class VelocityControllerNode(Node):
 
         # ROS infrastructure
         self.sub_cmd_vel = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 1)
-        self.sub_odometry = self.create_subscription(Odometry, 'odom', self.odometry_callback, 2)
+        #self.sub_odometry = self.create_subscription(Odometry, 'odom', self.odometry_callback, 2)
+        self.sub_modelstates = self.create_subscription(ModelStates, 'model_states', self.odometry_callback, 2)
         self.pub_cmd_accel = self.create_publisher(Accel, 'cmd_accel', 10)
 
-        #self.pid_linear = PIDRegulator(self.get_parameter("velocity_control/linear_p"), \
+        self.pid_linear = PIDRegulator(10.0, \
+                                       2.0, \
+                                       0.0, \
+                                       20.0)
+        self.pid_angular = PIDRegulator(10.0, \
+                                        2.0, \
+                                        1.0, \
+                                        5.0)
+
+        # self.pid_linear = PIDRegulator(self.get_parameter("velocity_control/linear_p"), \
         #                               self.get_parameter("velocity_control/linear_i"), \
         #                               self.get_parameter("velocity_control/linear_d"), \
         #                               self.get_parameter("velocity_control/linear_sat"))
-        #self.pid_angular = PIDRegulator(self.get_parameter("velocity_control/angular_p"), \
+        # self.pid_angular = PIDRegulator(self.get_parameter("velocity_control/angular_p"), \
         #                                self.get_parameter("velocity_control/angular_i"), \
         #                                self.get_parameter("velocity_control/angular_d"), \
         #                                self.get_parameter("velocity_control/angular_sat"))
@@ -86,12 +97,12 @@ class VelocityControllerNode(Node):
 
     def odometry_callback(self, msg):
         """Handle updated measured velocity callback."""
-        
+
         #if not bool(self.config):
         #    return
-            
-        linear = msg.twist.twist.linear
-        angular = msg.twist.twist.angular
+
+        linear = msg.twist[1].linear
+        angular = msg.twist[1].angular
         v_linear = numpy.array([linear.x, linear.y, linear.z])
         v_angular = numpy.array([angular.x, angular.y, angular.z])
 
@@ -100,15 +111,17 @@ class VelocityControllerNode(Node):
             # Twist should be provided wrt child_frame, gazebo provides it wrt world frame
             # see http://docs.ros.org/api/nav_msgs/html/msg/Odometry.html
         xyzw_array = lambda o: numpy.array([o.x, o.y, o.z, o.w])
-        q_wb = xyzw_array(msg.pose.pose.orientation)
-        #R_bw = quaternion_matrix((q_wb)[0:3, 0:3].transpose())
-        R_bw = quaternion_matrix(q_wb) # Tá correto esse valor??
+        q_wb = xyzw_array(msg.pose[1].orientation)
+        R_bw = quaternion_matrix(q_wb)[0:3, 0:3].transpose()
+        # R_bw = quaternion_matrix(q_wb) # Tá correto esse valor??
 
         v_linear = R_bw.dot(v_linear)
         v_angular = R_bw.dot(v_angular)
 
         # Compute compute control output:
-        t = msg.header.stamp.sec
+        #t = msg.header.stamp.sec
+        t = self.get_clock().now().nanoseconds
+        print(t)
         e_v_linear = (self.v_linear_des - v_linear)
         e_v_angular = (self.v_angular_des - v_angular)
 
@@ -117,13 +130,19 @@ class VelocityControllerNode(Node):
 
         # Convert and publish accel. command:
         cmd_accel = Accel()
-        cmd_accel.linear = Vector3(*a_linear)
-        cmd_accel.angular = Vector3(*a_angular)
+        cmd_accel.linear.x = a_linear[0]
+        cmd_accel.linear.y = a_linear[1]
+        cmd_accel.linear.z = a_linear[2]
+        cmd_accel.angular.x = a_angular[0]
+        cmd_accel.angular.y = a_angular[1]
+        cmd_accel.angular.z = a_angular[2]
+
         self.pub_cmd_accel.publish(cmd_accel)
 
-        self.config = config
+        # self.config = config
 
-        return config
+        # return config
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -131,6 +150,8 @@ def main(args=None):
     node = VelocityControllerNode()
     rclpy.spin(node)
 
+    node.destroy_node()
+    rclpy.shutdown()
         
 if __name__ == '__main__':
     main()

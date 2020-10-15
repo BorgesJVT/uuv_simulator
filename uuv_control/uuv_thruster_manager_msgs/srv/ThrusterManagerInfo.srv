@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-std_msgs/Header header
-float64 surge_speed
-geometry_msgs/Wrench command
+---
+int32 n_thrusters
+float64[] allocation_matrix
+string reference_frame

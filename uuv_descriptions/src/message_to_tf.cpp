@@ -8,6 +8,12 @@
 #include <tf2/transform_datatypes.h>
 #include <rclcpp/rclcpp.hpp>
 
+#include <geometry_msgs/msg/quaternion.hpp>
+#include <geometry_msgs/msg/quaternion_stamped.hpp>
+#include <geometry_msgs/msg/transform.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2/LinearMath/Quaternion.h>
+
 //#include <topic_tools/shape_shifter.h>
 
 std::string g_odometry_topic;
@@ -28,76 +34,90 @@ std::shared_ptr<tf2_ros::TransformBroadcaster> g_transform_broadcaster;
 rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr g_pose_publisher;
 rclcpp::Publisher<geometry_msgs::msg::Vector3Stamped>::SharedPtr g_euler_publisher;
 
-#ifndef TF_MATRIX3x3_H
-  typedef btScalar tfScalar;
-  namespace tf { typedef btMatrix3x3 Matrix3x3; }
-#endif
+// #ifndef TF_MATRIX3x3_H
+//   typedef btScalar tfScalar;
+//   namespace tf { typedef btMatrix3x3 Matrix3x3; }
+// #endif
 
-void addTransform(std::vector<geometry_msgs::msg::TransformStamped>& transforms, const tf::StampedTransform& tf)
+void addTransform(std::vector<geometry_msgs::msg::TransformStamped>& transforms, const geometry_msgs::msg::TransformStamped& new_tf)
 {
-  transforms.push_back(geometry_msgs::msg::TransformStamped());
-  tf::transformStampedTFToMsg(tf, transforms.back());
+  transforms.push_back(new_tf);
+  //transforms.push_back(geometry_msgs::msg::TransformStamped());
+  //tf::transformStampedTFToMsg(new_tf, transforms.back());
 }
 
-void sendTransform(geometry_msgs::msg::Pose const &pose, const std_msgs::Header& header, std::string child_frame_id = "")
+void sendTransform(geometry_msgs::msg::Pose const &pose, const std_msgs::msg::Header& header, std::string child_frame_id = "")
 {
   std::vector<geometry_msgs::msg::TransformStamped> transforms;
 
-  tf::msg::StampedTransform tf;
-  tf.stamp_ = header.stamp;
+  geometry_msgs::msg::TransformStamped new_tf_msg;
+  tf2::Stamped<tf2::Transform> new_tf;
+  new_tf_msg.header.stamp = header.stamp;
 
-  tf.frame_id_ = header.frame_id;
-  if (!g_frame_id.empty()) tf.frame_id_ = g_frame_id;
-  tf.frame_id_ = tf::resolve(g_tf_prefix, tf.frame_id_);
+  new_tf_msg.header.frame_id = header.frame_id;
+  if (!g_frame_id.empty()) new_tf_msg.header.frame_id = g_frame_id;
+  //new_tf.frame_id_ = tf::resolve(g_tf_prefix, tf.frame_id_);
 
   if (!g_child_frame_id.empty()) child_frame_id = g_child_frame_id;
   if (child_frame_id.empty()) child_frame_id = "base_link";
 
-  tf::Quaternion orientation;
-  tf::quaternionMsgToTF(pose.orientation, orientation);
-  tfScalar yaw, pitch, roll;
-  tf::Matrix3x3(orientation).getEulerYPR(yaw, pitch, roll);
-  tf::Point position;
-  tf::pointMsgToTF(pose.position, position);
+  tf2::Quaternion orientation;
+  tf2::fromMsg(pose.orientation, orientation);
+  tf2Scalar yaw, pitch, roll;
+  tf2::Matrix3x3(orientation).getEulerYPR(yaw, pitch, roll);
+  geometry_msgs::msg::Point position;
+  position.x = pose.position.x;
+  position.y = pose.position.y;
+  position.z = pose.position.z;
 
   // position intermediate transform (x,y,z)
   if( !g_position_frame_id.empty() && child_frame_id != g_position_frame_id) {
-    tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_position_frame_id);
-    tf.setOrigin(tf::Vector3(position.x(), position.y(), position.z() ));
-    tf.setRotation(tf::Quaternion(0.0, 0.0, 0.0, 1.0));
-    addTransform(transforms, tf);
+    //new_tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_position_frame_id);
+    new_tf.setOrigin(tf2::Vector3(position.x, position.y, position.z ));
+    new_tf.setRotation(tf2::Quaternion(0.0, 0.0, 0.0, 1.0));
+    new_tf_msg = tf2::toMsg(new_tf);
+    addTransform(transforms, new_tf_msg);
   }
 
   // footprint intermediate transform (x,y,yaw)
   if (!g_footprint_frame_id.empty() && child_frame_id != g_footprint_frame_id) {
-    tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_footprint_frame_id);
-    tf.setOrigin(tf::Vector3(position.x(), position.y(), 0.0));
-    tf.setRotation(tf::createQuaternionFromRPY(0.0, 0.0, yaw));
-    addTransform(transforms, tf);
+    //new_tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_footprint_frame_id);
+    new_tf.setOrigin(tf2::Vector3(position.x, position.y, 0.0));
+    tf2::Quaternion q;
+    tf2Scalar r = 0.0;
+    tf2Scalar p = 0.0;
+    tf2::Matrix3x3(q).getRPY(r, p, yaw);
+    new_tf.setRotation(q);
+    new_tf_msg = tf2::toMsg(new_tf);
+    addTransform(transforms, new_tf_msg);
 
     yaw = 0.0;
-    position.setX(0.0);
-    position.setY(0.0);
-    tf.frame_id_ = tf::resolve(g_tf_prefix, g_footprint_frame_id);
+    position.x = 0.0;
+    position.y = 0.0;
+    //new_tf.frame_id_ = tf::resolve(g_tf_prefix, g_footprint_frame_id);
   }
 
   // stabilized intermediate transform (z)
   if (!g_footprint_frame_id.empty() && child_frame_id != g_stabilized_frame_id) {
-    tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
-    tf.setOrigin(tf::Vector3(0.0, 0.0, position.z()));
-    tf.setBasis(tf::Matrix3x3::getIdentity());
-    addTransform(transforms, tf);
+    //new_tf.child_frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
+    new_tf.setOrigin(tf2::Vector3(0.0, 0.0, position.z));
+    new_tf.setBasis(tf2::Matrix3x3::getIdentity());
+    new_tf_msg = tf2::toMsg(new_tf);
+    addTransform(transforms, new_tf_msg);
 
-    position.setZ(0.0);
-    tf.frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
+    position.z = 0.0;
+    //new_tf.frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
   }
 
   // base_link transform (roll, pitch)
   if (g_publish_roll_pitch) {
-    tf.child_frame_id_ = tf::resolve(g_tf_prefix, child_frame_id);
-    tf.setOrigin(position);
-    tf.setRotation(tf::createQuaternionFromRPY(roll, pitch, yaw));
-    addTransform(transforms, tf);
+    //new_tf.child_frame_id_ = tf::resolve(g_tf_prefix, child_frame_id);
+    new_tf.setOrigin(tf2::Vector3(position.x, position.y, position.z));
+    tf2::Quaternion q;
+    tf2::Matrix3x3(q).getRPY(roll, pitch, yaw);
+    new_tf.setRotation(q);
+    new_tf_msg = tf2::toMsg(new_tf);
+    addTransform(transforms, new_tf_msg);
   }
 
   g_transform_broadcaster->sendTransform(transforms);
@@ -122,46 +142,49 @@ void sendTransform(geometry_msgs::msg::Pose const &pose, const std_msgs::Header&
 }
 
 void odomCallback(const nav_msgs::msg::Odometry::SharedPtr odometry) {
-  sendTransform(odometry.pose.pose, odometry.header, odometry.child_frame_id);
+  sendTransform(odometry->pose.pose, odometry->header, odometry->child_frame_id);
 }
 
 void poseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr pose) {
-  sendTransform(pose.pose, pose.header);
+  sendTransform(pose->pose, pose->header);
 }
 
 void tfCallback(const geometry_msgs::msg::TransformStamped::SharedPtr tf) {
-  geometry_msgs::Pose pose;
-  pose.position.x = tf.transform.translation.x;
-  pose.position.y = tf.transform.translation.y;
-  pose.position.z = tf.transform.translation.z;
-  pose.orientation = tf.transform.rotation;
+  geometry_msgs::msg::Pose pose;
+  pose.position.x = tf->transform.translation.x;
+  pose.position.y = tf->transform.translation.y;
+  pose.position.z = tf->transform.translation.z;
+  pose.orientation = tf->transform.rotation;
 
-  sendTransform(pose, tf.header);
+  sendTransform(pose, tf->header);
 }
 
 void imuCallback(const sensor_msgs::msg::Imu::SharedPtr imu) {
   std::vector<geometry_msgs::msg::TransformStamped> transforms;
   std::string child_frame_id;
 
-  tf::msg::StampedTransform tf;
-  tf.stamp_ = imu->header.stamp;
+  geometry_msgs::msg::TransformStamped new_tf_msg;
+  tf2::Stamped<tf2::Transform> new_tf;
+  new_tf_msg.header.stamp = imu->header.stamp;
 
-  tf.frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
+  //new_tf.frame_id_ = tf::resolve(g_tf_prefix, g_stabilized_frame_id);
   if (!g_child_frame_id.empty()) child_frame_id = g_child_frame_id;
   if (child_frame_id.empty()) child_frame_id = "base_link";
 
-  tf::Quaternion orientation;
-  tf::quaternionMsgToTF(imu->orientation, orientation);
-  tfScalar yaw, pitch, roll;
-  tf::Matrix3x3(orientation).getEulerYPR(yaw, pitch, roll);
-  tf::Quaternion rollpitch = tf::createQuaternionFromRPY(roll, pitch, 0.0);
+  tf2::Quaternion orientation;
+  tf2::fromMsg(imu->orientation, orientation);
+  tf2Scalar yaw, pitch, roll;
+  tf2::Matrix3x3(orientation).getEulerYPR(yaw, pitch, roll);
+  tf2::Quaternion rollpitch;
+  tf2Scalar v = 0.0;
+  tf2::Matrix3x3(rollpitch).getRPY(roll, pitch, v);
 
   // base_link transform (roll, pitch)
   if (g_publish_roll_pitch) {
-    tf.child_frame_id_ = tf::resolve(g_tf_prefix, child_frame_id);
-    tf.setOrigin(tf::Vector3(0.0, 0.0, 0.0));
-    tf.setRotation(rollpitch);
-    addTransform(transforms, tf);
+    //new_tf.child_frame_id_ = tf::resolve(g_tf_prefix, child_frame_id);
+    new_tf.setOrigin(tf2::Vector3(0.0, 0.0, 0.0));
+    new_tf.setRotation(rollpitch);
+    addTransform(transforms, new_tf_msg);
   }
 
   if (!transforms.empty()) g_transform_broadcaster->sendTransform(transforms);
@@ -171,7 +194,7 @@ void imuCallback(const sensor_msgs::msg::Imu::SharedPtr imu) {
     geometry_msgs::msg::PoseStamped pose_stamped;
     pose_stamped.header.stamp = imu->header.stamp;
     pose_stamped.header.frame_id = g_stabilized_frame_id;
-    tf::quaternionTFToMsg(rollpitch, pose_stamped.pose.orientation);
+    pose_stamped.pose.orientation = tf2::toMsg(rollpitch);
     g_pose_publisher->publish(pose_stamped);
   }
 }
@@ -244,7 +267,7 @@ int main(int argc, char** argv) {
 
   //g_tf_prefix = tf::getPrefixParam(node);
   g_transform_broadcaster = std::make_shared<tf2_ros::TransformBroadcaster>(node);
-  int subscribers = 0;
+  int subscribers = 1;
   if (!g_odometry_topic.empty()) {
       sub1 = node->create_subscription<nav_msgs::msg::Odometry>(
         g_odometry_topic, 10, odomCallback);
