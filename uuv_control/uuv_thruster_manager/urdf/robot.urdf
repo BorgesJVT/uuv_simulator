@@ -51,7 +51,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/RexROV_no_props.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/RexROV_no_props.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <!-- bottom plate -->
@@ -107,7 +107,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -155,7 +155,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -203,7 +203,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -251,7 +251,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -299,7 +299,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -347,7 +347,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -395,7 +395,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -443,7 +443,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/joaquim/rbim_git/install/uuv_descriptions/share/uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
+        <mesh filename="file:///uuv_descriptions/meshes/prop.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <collision>
